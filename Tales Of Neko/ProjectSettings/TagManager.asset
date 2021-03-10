@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Buildings
-  - Ground
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
   - 
   - 
   - 
