@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -7519217156081558956, guid: 946d4bb1d861497429d36208d7e02618, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,4 +106,5 @@ MonoBehaviour:
   Mana: 100
   Spells:
   - {fileID: 11400000, guid: 04d54bd5b6465d34c9aab11bb4a4aa1b, type: 2}
-  Difficulty: 0
+  Level: 0
+  difficulty: 0
