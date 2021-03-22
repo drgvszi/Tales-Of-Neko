@@ -25,7 +25,7 @@ namespace Tales_of_Neko
         public static void Attack(ref Mob mob, ref Player player)
         {
             Stats allStats = player.GetComplessiveStats();
-            player.TakeDamage(Math.Abs(allStats.Constitution - mob.GetAttackDamage()));
+            player.TakeDamage(Math.Abs(allStats.Constitution - mob.Stats.Strength));
         }
 
         public static bool CanFight(Character character1, Character character2)

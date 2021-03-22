@@ -1,20 +1,21 @@
-﻿namespace Tales_of_Neko
+﻿using Tales_of_Neko;
+using UnityEngine;
+using UnityEngine.Serialization;
+
+public class Mob: Character
 {
-    public class Mob: Character
+    [FormerlySerializedAs("Difficulty")] public float difficulty;
+    
+    public Mob(string name, float difficulty, Stats stats) : base(name)
     {
-        public float Difficulty;
-
-        public float GetAttackDamage()
-        {
-            return Stats.Strength;
-        }
-        public Mob(string name, float difficulty, Stats stats) : base(name)
-        {
-            Difficulty = difficulty;
-            Stats = stats;
-        }
-        
-        
-
+        this.difficulty = difficulty;
+        Stats = stats;
     }
+    public override string ToString()
+    {
+        return base.ToString();
+    }
+    
+    
+
 }

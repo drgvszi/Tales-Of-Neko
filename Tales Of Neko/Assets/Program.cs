@@ -10,7 +10,7 @@ namespace Tales_of_Neko
         {
             Stats MyStats=new Stats(20,0,20,20,40);
             Stats MonsterStats =new Stats(30,0,0,0,0);
-            Player me = Player.CreateNewPlayer("Alin",CharacterClass.Mage,100.0f,100.0f,MyStats);
+            Player me =new  Player("Alin",CharacterClass.Mage,100.0f,100.0f,MyStats);
             Mob siren=new Mob("Siren1",60,MonsterStats);
             
             Console.WriteLine(me.Stats);

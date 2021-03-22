@@ -1,20 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Tales_of_Neko;
 
-namespace Tales_of_Neko
+[Serializable] 
+public class Inventory
 {
-    public class Inventory
-    {
-        public EquippedItems EquippedItems { get; set; }
-        public List<Item> Items { get;}
+    
+    public EquippedItems EquippedItems;
+    public List<Item> Items;
 
-        public Inventory()
-        {
-            EquippedItems=new EquippedItems();
-            Items=new List<Item>();
-        }
-        public void Add(Item item)
-        {
-            Items.Add(item);
-        }
+    public Inventory()
+    {
+        EquippedItems=new EquippedItems();
+        Items=new List<Item>();
+    }
+    public void Add(Item item)
+    {
+        Items.Add(item);
     }
 }

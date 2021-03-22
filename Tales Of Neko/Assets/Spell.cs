@@ -9,19 +9,18 @@ public class Spell : ScriptableObject
     [Header("Spell characteristic")]
     public string Name;
     public ElementType Type;
-    [Header("Spell stats")] 
-    public Stats Stats;
+    [Header("Spell stats")] public double AttackDamage;
     public double CurrentCooldown;
     public double MaxCooldown;
     public int ManaUsage;
 
    
 
-    public Spell(string name,ElementType type,Stats stats,double maxCooldown,int manaUsage)
+    public Spell(string name,ElementType type,double attackDamage,double maxCooldown,int manaUsage)
     {
         Name = name;
         Type = type;
-        Stats = stats;
+        AttackDamage = attackDamage;
         MaxCooldown = maxCooldown;
         ManaUsage = manaUsage;
         CurrentCooldown = 0;
@@ -33,7 +32,7 @@ public class Spell : ScriptableObject
     }
     public bool CanUse(Player player)
     {
-        if (Player.ThePlayer.GetCurrentMana() > ManaUsage && IsReady())
+        if (player.GetCurrentMana() > ManaUsage && IsReady())
         {
             return true;
         }

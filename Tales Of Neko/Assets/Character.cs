@@ -1,55 +1,96 @@
-﻿namespace Tales_of_Neko
+﻿using System.Collections.Generic;
+using Tales_of_Neko;
+using UnityEngine;
+
+
+public class Character: MonoBehaviour
 {
-    public class Character
+    public string Name;
+
+    public Stats Stats;
+
+    public double Health;
+    public double Mana;
+    
+    public List<Spell> Spells;
+    public int Level;
+
+    public Character(string name)
     {
-        public string Name { get; }
+        Name = name;
+        Health = 100.0f;
+        Mana = 100.0f;
+        Stats = new Stats();
+    }
+    
+    
+    public double GetCurrentMana() {
+        return Mana;
+    }
+    public double GetCurrentHealth()
+    {
+        return Health;
+    }
+    public Stats GetRawStats()
+    {
+        return Stats;
+    }
 
-        public Stats Stats { get; set; }
+    public bool IsAlive()
+    {
+        return Health > 0;
+    }
 
-        protected float Health { get; set; }
-        protected float Mana { get; set; }
+    
+    public double TakeDamage(double damage)
+    {
+        double rate = damage / Stats.Constitution;
+        Health -= (rate * damage);
+        if (Health < 0)
+        {
+            Health = 0;
+        }
+        return Health;
+    }
+    public double UseMana(double mana)
+    {
+        Mana -= mana;
+        if (Mana < 0)
+        {
+            Mana = 0;
+        }
+        return Mana;
+    }
 
-        public Character(string name)
+    public bool CanUse(Spell spell)
+    {
+        if(Spells.Contains(spell))
         {
-            Name = name;
-            Health = 100.0f;
-            Mana = 100.0f;
-            Stats = new Stats();
-        }
-        
-        
-        public float GetCurrentMana() {
-            return Mana;
-        }
-        public float GetCurrentHealth()
-        {
-            return Health;
-        }
-        public Stats GetRawStats()
-        {
-            return Stats;
-        }
-
-        public bool IsAlive()
-        {
-            return Health > 0;
-        }
-
-        
-        public float TakeDamage(float damage)
-        {
-            Health -= damage;
-            return Health;
-        }
-        public float UseMana(float mana)
-        {
-            Mana -= mana;
-            return Mana;
+            if (GetCurrentMana() >= spell.ManaUsage)
+            {
+                return true;
+            }
+            
         }
 
-        public override string ToString()
+        return false;
+    }
+    public List<Spell> GetAvailableSpells()
+    {
+        List<Spell> availableSpells=new List<Spell>();
+        foreach (Spell spell in Spells) 
         {
-            return Name + "\nHEALTH: " + Health + "\nMANA: " + Mana;
+            if (CanUse(spell))
+            {
+                availableSpells.Add(spell);
+            }
         }
+
+        return availableSpells;
+    }
+
+    public override string ToString()
+    {
+        return Name + "  HEALTH: " + Health + "   MANA: " + Mana+"\n";
     }
 }
