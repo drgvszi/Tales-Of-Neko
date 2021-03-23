@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1b56ff13788e8429a295eaa76683f0, type: 3}
-  m_Name: FireBall
+  m_Name: QuickAttack
   m_EditorClassIdentifier: 
-  Name: FireBall
+  Name: QuickAttack
   Type: 0
-  AttackDamage: 10
+  AttackDamage: 1
   CurrentCooldown: 0
-  MaxCooldown: 10
-  ManaUsage: 2
+  MaxCooldown: 1
+  ManaUsage: 0
   IsEquipped: 1
+  IsBasicAttack: 1

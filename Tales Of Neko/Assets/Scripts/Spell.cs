@@ -14,6 +14,8 @@ public class Spell : ScriptableObject
     public double MaxCooldown;
     public int ManaUsage;
 
+    public bool IsEquipped = false;
+    public bool IsBasicAttack = false;
    
 
     public Spell(string name,ElementType type,double attackDamage,double maxCooldown,int manaUsage)
@@ -42,5 +44,31 @@ public class Spell : ScriptableObject
     public void PutOnCooldown()
     {
         CooldownManager.Instance.StartCoolDown(this);    
+    }
+
+    public static string TypeToString(Spell spell)
+    {
+        if (spell.IsBasicAttack)
+        {
+            return "👊";
+        }
+        switch (spell.Type)
+        {
+            case ElementType.Fire:
+                return "🔥";
+            case ElementType.Air:
+                return "🌀";
+            case ElementType.Water:
+                return "🌊";
+            case ElementType.Earth:
+                return "⛰️";
+            case ElementType.Light:
+                return "✨";
+            case ElementType.Dark:
+                return "🌑";
+            default:
+                return "🔮";
+        }
+        
     }
 }

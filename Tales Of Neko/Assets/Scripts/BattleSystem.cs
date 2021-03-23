@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Tales_of_Neko;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -18,13 +19,14 @@ public class BattleSystem: MonoBehaviour
     public Transform playerStation;
     public Transform enemyStation;
 
+    public PlayerHud playerHud;
+    public EnemyHud enemyHud;
+
     public BattleState battleState;
 
     public Player player;
     public Mob enemy;
-
-    [FormerlySerializedAs("PlayerHud")] public PlayerHud playerHud;
-    [FormerlySerializedAs("EnemyHud")] public EnemyHud enemyHud;
+    
     void Start()
     {
         battleState = BattleState.Start;
@@ -41,37 +43,40 @@ public class BattleSystem: MonoBehaviour
         player = playerGo.GetComponent<Player>();
         enemy = enemyGo.GetComponent<Mob>();
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         battleState = BattleState.PlayerTurn;
 
-        playerHud.textBox.text = player.ToString();
-        enemyHud.textBox.text = enemy.ToString();
-        
-    
     }
 
     IEnumerator PlayerTurn()
     {
-	    playerHud.textBox.text = "";
-	    playerHud.textBox.text += "Player turn\n";
-	    playerHud.textBox.text += player.ToString();
-	    yield return new WaitForSeconds(1f);
+	    yield return new WaitForSeconds(0f);
     }
 
-    
+
+    public void UseSpellOnClick(GameObject SpellSlot)
+    {
+	    SpellSlot spellSlot = SpellSlot.GetComponent<SpellSlot>();
+	    if (spellSlot.Spell.IsBasicAttack)
+	    {
+		    UseBasicAttack(spellSlot.Spell.AttackDamage);
+	    }
+	    else
+	    {
+		    UseSpell(spellSlot.Spell);
+	    }
+    }
     public void UseSpell(Spell spell)
     { 
 	    if (battleState != BattleState.PlayerTurn) return;
-	    playerHud.textBox.text += "use spell "+spell.Name+"\n";
 	    StartCoroutine(ManaAttack(spell));
 
     }
-    public void UseBasicAttack()
+    public void UseBasicAttack(double addedAttack)
     {
 	    if (battleState != BattleState.PlayerTurn)
 		    return;
-	    playerHud.textBox.text += "use basic attack\n";
-	    StartCoroutine(BasicAttack());
+	    StartCoroutine(BasicAttack(addedAttack));
 	    
     }
 
@@ -86,8 +91,11 @@ public class BattleSystem: MonoBehaviour
 		    enemy.TakeDamage(playerWisdom * 0.8 + playerStrength * 0.3 + spell.AttackDamage);
 		    
 		    bool isDead = !enemy.IsAlive();
+
+		    UpdatePlayerHud();
+		    UpdateEnemyHud();
 	    
-		    yield return new WaitForSeconds(2f);
+		    yield return new WaitForSeconds(1f);
 	    
 		    if(isDead)
 		    {
@@ -103,14 +111,17 @@ public class BattleSystem: MonoBehaviour
 	   
     }
     
-    IEnumerator BasicAttack()
+    IEnumerator BasicAttack(double addedAttack)
     {
 	    double playerDexterity = player.GetComplessiveStats().Dexterity;
 	    double playerStrength = player.GetComplessiveStats().Strength;
 	    
-	    enemy.TakeDamage(playerStrength + 0.2 * playerDexterity);
+	    enemy.TakeDamage(playerStrength + 0.2 * playerDexterity +addedAttack);
 	    
 	    bool isDead = !enemy.IsAlive();
+	    
+	    UpdatePlayerHud();
+	    UpdateEnemyHud();
 	    
 	    yield return new WaitForSeconds(1f);
 	    
@@ -130,15 +141,11 @@ public class BattleSystem: MonoBehaviour
     {
 	    
 	    bool isDone=false;
-	    enemyHud.textBox.text = "";
-	    enemyHud.textBox.text += "Enemy turn\n";
-	    enemyHud.textBox.text += enemy.ToString();
-	    
+
 	    double randomNumber = Random.value;
 	    if (randomNumber <= 0.3)
 	    {
 		    player.TakeDamage(enemy.Stats.Strength + 0.2 * enemy.Stats.Dexterity);
-		    enemyHud.textBox.text += "Use basic attack\n";
 	    }
 	    else
 	    {
@@ -146,7 +153,6 @@ public class BattleSystem: MonoBehaviour
 		    if (availableSpells.Count == 0)
 		    {
 			    player.TakeDamage(enemy.Stats.Strength + 0.2 * enemy.Stats.Dexterity);
-			    enemyHud.textBox.text += "Use basic attack\n";
 		    }
 		    else
 		    {
@@ -155,8 +161,6 @@ public class BattleSystem: MonoBehaviour
 			    
 			    double enemyWisdom = enemy.Stats.Wisdom;
 			    double enemyStrength = enemy.Stats.Strength;
-
-			    enemyHud.textBox.text += "Use spell " + spell.Name + "\n";
 			    enemy.UseMana(spell.ManaUsage);
 			    player.TakeDamage(enemyWisdom * 0.8 + enemyStrength * 0.3 + spell.AttackDamage);
 			    
@@ -164,7 +168,10 @@ public class BattleSystem: MonoBehaviour
 	    }
 	    bool isDead = !player.IsAlive();
 	    
-	    yield return new WaitForSeconds(3f);
+	    UpdatePlayerHud();
+	    UpdateEnemyHud();
+	    
+	    yield return new WaitForSeconds(1f);
 	    
 	    if(isDead)
 	    {
@@ -177,11 +184,19 @@ public class BattleSystem: MonoBehaviour
 	    }
     }
 
+    private void UpdateEnemyHud()
+    {
+	    playerHud.Set(player);
+    }
+
+    private void UpdatePlayerHud()
+    {
+	    enemyHud.Set(enemy);
+    }
+
     IEnumerator EndBattle()
     {
-	    playerHud.textBox.text = "";
-	    playerHud.textBox.text += battleState == BattleState.Win ? "Player won!" : "Player lost!";
-	    yield return new WaitForSeconds(3f);
+	    yield return new WaitForSeconds(2f);
 	    SceneManager.LoadScene("Map");
 
     }

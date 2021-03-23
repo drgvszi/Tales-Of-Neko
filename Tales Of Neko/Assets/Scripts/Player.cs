@@ -83,6 +83,21 @@ public class Player:Character
         return Math.Round(0.04 * (Level ^ 3) + 0.8 * (Level ^ 2) + 2 * Level);
     }
 
+    public List<Spell> GetEquippedSpells()
+    {
+        List<Spell> spells = new List<Spell>();
+        foreach (Spell spell in Spells)
+        {
+            if (spell.IsEquipped)
+            {
+                spells.Add(spell);
+            }
+            
+        }
+
+        return spells;
+    }
+
     public override string ToString()
     {
         return base.ToString();

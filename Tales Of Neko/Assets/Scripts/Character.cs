@@ -11,6 +11,9 @@ public class Character: MonoBehaviour
 
     public double Health;
     public double Mana;
+
+    public double MaxHealth;
+    public double MaxMana;
     
     public List<Spell> Spells;
     public int Level;
