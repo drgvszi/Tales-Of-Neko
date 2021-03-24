@@ -6,6 +6,7 @@ using Tales_of_Neko;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public enum BattleState{Start,PlayerTurn,EnemyTurn,Win,Lose}
@@ -26,11 +27,14 @@ public class BattleSystem: MonoBehaviour
 
     public Player player;
     public Mob enemy;
+
+    public Text gameChat;
     
     void Start()
     {
         battleState = BattleState.Start;
         StartCoroutine(SetupBattle());
+        gameChat.text = "Battle start!";
     }
 
     IEnumerator SetupBattle()
@@ -44,12 +48,24 @@ public class BattleSystem: MonoBehaviour
         enemy = enemyGo.GetComponent<Mob>();
 
         yield return new WaitForSeconds(1f);
-        battleState = BattleState.PlayerTurn;
+        if (player.GetComplessiveStats().Dexterity > enemy.Stats.Dexterity)
+        { 
+	        battleState = BattleState.PlayerTurn;
+	        gameChat.text = "You are faster than your enemy, it is your turn!";
+        }
+        else
+        {
+	        battleState = BattleState.EnemyTurn;
+	        gameChat.text = "The enemy is faster than you, it is his turn!";
+	        StartCoroutine(EnemyTurn());
+        }
+        
 
     }
 
     IEnumerator PlayerTurn()
     {
+	    gameChat.text = "It is your turn";
 	    yield return new WaitForSeconds(0f);
     }
 
@@ -139,12 +155,14 @@ public class BattleSystem: MonoBehaviour
     
     IEnumerator EnemyTurn()
     {
+	    gameChat.text="It is the enemy turn";
 	    
 	    bool isDone=false;
 
 	    double randomNumber = Random.value;
 	    if (randomNumber <= 0.3)
 	    {
+		    gameChat.text=enemy.name+" uses basic attack";
 		    player.TakeDamage(enemy.Stats.Strength + 0.2 * enemy.Stats.Dexterity);
 	    }
 	    else
@@ -152,6 +170,7 @@ public class BattleSystem: MonoBehaviour
 		    List<Spell> availableSpells = enemy.GetAvailableSpells();
 		    if (availableSpells.Count == 0)
 		    {
+			    gameChat.text=enemy.name+" uses basic attack";
 			    player.TakeDamage(enemy.Stats.Strength + 0.2 * enemy.Stats.Dexterity);
 		    }
 		    else
@@ -161,6 +180,8 @@ public class BattleSystem: MonoBehaviour
 			    
 			    double enemyWisdom = enemy.Stats.Wisdom;
 			    double enemyStrength = enemy.Stats.Strength;
+			    
+			    gameChat.text=enemy.name+" uses "+spell.Name;
 			    enemy.UseMana(spell.ManaUsage);
 			    player.TakeDamage(enemyWisdom * 0.8 + enemyStrength * 0.3 + spell.AttackDamage);
 			    
@@ -196,7 +217,14 @@ public class BattleSystem: MonoBehaviour
 
     IEnumerator EndBattle()
     {
-	    yield return new WaitForSeconds(2f);
+	    gameChat.text= battleState==BattleState.Win?"You won!":"You lost!";
+	    yield return new WaitForSeconds(1f);
+	    if (battleState == BattleState.Win)
+	    {
+		    gameChat.text = "You gained " + enemy.difficulty+" XP";
+		    player.AddExperience(enemy.difficulty);
+		    yield return new WaitForSeconds(1f);
+	    }
 	    SceneManager.LoadScene("Map");
 
     }
