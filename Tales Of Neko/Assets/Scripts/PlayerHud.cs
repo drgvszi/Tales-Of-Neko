@@ -18,24 +18,33 @@ public class PlayerHud:MonoBehaviour
         Player = GameManager.Instance.player;
         print(1);
 
-        nameTextBox.text = Player.name;
-        levelTextBox.text =  "  Lv. " + Player.Level;
+        if (nameTextBox!=null)
+        {
+            nameTextBox.text = Player.name;
+            levelTextBox.text = "  Lv. " + Player.Level;
+        }
 
         HealthSlider.maxValue = (float) Player.MaxHealth;
         HealthSlider.value = (float) Player.Health;
         
         ManaSlider.maxValue = (float) Player.MaxMana;
         ManaSlider.value = (float) Player.Mana;
-        
-        XpBar.maxValue = (float) Player.NextLevelXp();
-        XpBar.value = (float) Player.Experience;
+
+        if (XpBar != null)
+        {
+            XpBar.maxValue = (float) Player.NextLevelXp();
+            XpBar.value = (float) Player.Experience;
+        }
     }
 
     public void Set(Player player)
     {
+        
         HealthSlider.value = (float) player.Health;
         ManaSlider.value = (float) player.Mana;
-        XpBar.value = (float) Player.Experience;
-        
+        if (XpBar != null)
+        {
+            XpBar.value = (float) Player.Experience;
+        }
     }
 }
