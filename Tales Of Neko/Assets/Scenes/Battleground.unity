@@ -1547,9 +1547,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: ChangerScene
+      - m_Target: {fileID: 1223102471}
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: Run
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerGameObject: {fileID: 1664948243567189435, guid: 6a44fa7db742e1542abe5bbd6bf78726, type: 3}
-  enemyGameObject: {fileID: 7158455307816390169, guid: a0eb83dfa8e411844920a5ba620407c2, type: 3}
+  enemyGameObject: {fileID: 2631167550623847607, guid: fe47d61634d36164c96564beaae4fbb6, type: 3}
   playerStation: {fileID: 1425662760}
   enemyStation: {fileID: 99893534}
   playerHud: {fileID: 130202038}
@@ -2655,6 +2655,13 @@ MonoBehaviour:
   player: {fileID: 0}
   enemy: {fileID: 0}
   gameChat: {fileID: 1367536139}
+  SpellsButtons:
+  - {fileID: 225393424}
+  - {fileID: 1854959122}
+  - {fileID: 981537463}
+  - {fileID: 995998393}
+  - {fileID: 940130977}
+  - {fileID: 2082144468}
 --- !u!1 &1290766230
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Tales_of_Neko;
 using UnityEngine;
 
@@ -25,8 +26,11 @@ public class Character: MonoBehaviour
         Mana = 100.0f;
         Stats = new Stats();
     }
-    
-    
+
+    public void Awake()
+    {
+    }
+
     public double GetCurrentMana() {
         return Mana;
     }

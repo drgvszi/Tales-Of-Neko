@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7158455307816390169
+--- !u!1 &1664948243567189435
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7625656696056132682}
-  - component: {fileID: 5847208784935910369}
-  - component: {fileID: -2366014771738625201}
+  - component: {fileID: 6001243127134422329}
+  - component: {fileID: -9028336035785769819}
+  - component: {fileID: 8148806193542546913}
   m_Layer: 0
-  m_Name: DemonBoss
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7625656696056132682
+--- !u!4 &6001243127134422329
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7158455307816390169}
+  m_GameObject: {fileID: 1664948243567189435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5847208784935910369
+--- !u!212 &-9028336035785769819
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7158455307816390169}
+  m_GameObject: {fileID: 1664948243567189435}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,41 +72,53 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7519217156081558956, guid: 946d4bb1d861497429d36208d7e02618, type: 3}
+  m_Sprite: {fileID: 8973619679579535368, guid: 8083f87e4b6af3249af3a3c6bff8c46c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2366014771738625201
+--- !u!114 &8148806193542546913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7158455307816390169}
+  m_GameObject: {fileID: 1664948243567189435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a43c238f3c00a4aae354f37cc87d9b, type: 3}
+  m_Script: {fileID: 11500000, guid: e46593955ecf1d2438c5523b3f42e96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Demon
+  Name: Me
   Stats:
-    Strength: 20
-    Constitution: 7
-    Dexterity: 15
-    Intelligence: 2
-    Wisdom: 15
-  Health: 200
+    Strength: 5
+    Constitution: 5
+    Dexterity: 0
+    Intelligence: 5
+    Wisdom: 5
+  Health: 100
   Mana: 100
-  MaxHealth: 200
+  MaxHealth: 100
   MaxMana: 100
   Spells:
   - {fileID: 11400000, guid: 04d54bd5b6465d34c9aab11bb4a4aa1b, type: 2}
-  Level: 0
-  difficulty: 0
+  - {fileID: 11400000, guid: 5cec8c864258ac84db56962bf33ed3c4, type: 2}
+  Level: 1
+  Class: 0
+  Inventory:
+    EquippedItems:
+      Helmet: {fileID: 11400000, guid: a51b134c0bc9a944e8889d93158776fe, type: 2}
+      Chestplate: {fileID: 11400000, guid: 17cf7e09ba8c7ab4f8d25de0269f2f0c, type: 2}
+      Leggings: {fileID: 11400000, guid: 56aff5a78f71b4a4399e822fc6d3f294, type: 2}
+      Boots: {fileID: 11400000, guid: 2942640c282644c4ba8264eaadaf0bf8, type: 2}
+      Weapon: {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
+    Items:
+    - {fileID: 11400000, guid: 56aff5a78f71b4a4399e822fc6d3f294, type: 2}
+  Experience: 4
+  canLevelUp: 1

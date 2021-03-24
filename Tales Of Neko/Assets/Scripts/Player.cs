@@ -6,6 +6,7 @@ using Random = System.Random;
 
 public class Player:Character
 {
+    public static Player instance;
     public CharacterClass Class;
     public Inventory Inventory;
     
@@ -13,13 +14,27 @@ public class Player:Character
     public double Experience;
 
     public bool canLevelUp = false;
+    
+    
+    public static Player Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new Player("Me");
+            }
+
+            return instance;
+        }
+    }
     private Player(string name) : base(name)
     {
         Experience = 0;
         Inventory = new Inventory();
         Spells= new List<Spell>();
     }
-    public Player(string name, CharacterClass characterClass, float health, float mana):base(name)
+    private Player(string name, CharacterClass characterClass, float health, float mana):base(name)
     {
         Class = characterClass;
         Health = health;
@@ -30,7 +45,7 @@ public class Player:Character
         Experience = 0;
 
     }
-    public Player(string name, CharacterClass characterClass, float health, float mana,Stats stats):base(name)
+    private Player(string name, CharacterClass characterClass, float health, float mana,Stats stats):base(name)
     {
         Class = characterClass;
         Health = health;

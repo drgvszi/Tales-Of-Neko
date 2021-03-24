@@ -9,12 +9,12 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public enum BattleState{Start,PlayerTurn,EnemyTurn,Win,Lose}
+public enum BattleState{Start,PlayerTurn,EnemyTurn,Win,Lose,UsedAbility}
 public enum AttackType{Mana,Physic}
 public class BattleSystem: MonoBehaviour
 {
-    public GameObject playerGameObject;
-    public GameObject enemyGameObject;
+	public GameObject playerGameObject;
+	public GameObject enemyGameObject;
     // Start is called before the first frame update
 
     public Transform playerStation;
@@ -29,6 +29,8 @@ public class BattleSystem: MonoBehaviour
     public Mob enemy;
 
     public Text gameChat;
+
+    public List<GameObject> SpellsButtons;
     
     void Start()
     {
@@ -37,21 +39,39 @@ public class BattleSystem: MonoBehaviour
         gameChat.text = "Battle start!";
     }
 
+    public void Run()
+    {
+	    player.GetRawStats();
+	    if (player.CanEscape(enemy))
+	    {
+		    gameChat.text = "You escaped!";
+	    }
+	    else
+	    {
+		    gameChat.text = "Can't escape!";
+	    }
+
+	    new WaitForSeconds(1f);
+    }
     IEnumerator SetupBattle()
     {
+	    player = GameManager.Instance.player;
+	    enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
+
+	    playerGameObject = Resources.Load<GameObject>( "Player\\Player");
+	    enemyGameObject = Resources.Load<GameObject>( "Enemies\\"+enemy.Name);
+	    
+	    
 	    playerGameObject.GetComponent<Renderer>().sortingOrder = 1;
 	    enemyGameObject.GetComponent<Renderer>().sortingOrder = 1;
-        GameObject playerGo = Instantiate(playerGameObject, playerStation);
-        GameObject enemyGo = Instantiate(enemyGameObject, enemyStation);
-        
-        player = playerGo.GetComponent<Player>();
-        enemy = enemyGo.GetComponent<Mob>();
+        Instantiate(playerGameObject, playerStation);
+        Instantiate(enemyGameObject, enemyStation);
 
         yield return new WaitForSeconds(1f);
 
     }
 
-    public void StartFight()
+    void StartFight()
     {
 	    if (player.GetComplessiveStats().Dexterity > enemy.Stats.Dexterity)
 	    { 
@@ -63,15 +83,14 @@ public class BattleSystem: MonoBehaviour
 	    {
 		    battleState = BattleState.EnemyTurn;
 		    gameChat.text = "The enemy is faster than you, it is his turn!";
-		    new WaitForSeconds(2f);
-		    StartCoroutine(EnemyTurn());
+		    StartCoroutine(EnemyTurn(true));
 	    }
     }
 
     IEnumerator PlayerTurn()
     {
 	    gameChat.text = "It is your turn";
-	    yield return new WaitForSeconds(0f);
+	    yield return new WaitForSeconds(0);
     }
 
 
@@ -103,6 +122,7 @@ public class BattleSystem: MonoBehaviour
 
     IEnumerator ManaAttack(Spell spell)
     {
+	    battleState = BattleState.UsedAbility;
 	    if (player.CanUse(spell))
 	    {
 		    double playerWisdom = player.GetComplessiveStats().Wisdom ;
@@ -115,6 +135,8 @@ public class BattleSystem: MonoBehaviour
 
 		    UpdatePlayerHud();
 		    UpdateEnemyHud();
+
+		    gameChat.text = "GO: " + spell.Name+"!!";
 	    
 		    yield return new WaitForSeconds(1f);
 	    
@@ -125,7 +147,7 @@ public class BattleSystem: MonoBehaviour
 		    } else
 		    {
 			    battleState= BattleState.EnemyTurn;
-			    StartCoroutine(EnemyTurn());
+			    StartCoroutine(EnemyTurn(false));
 		    }
 		    
 	    }
@@ -134,6 +156,7 @@ public class BattleSystem: MonoBehaviour
     
     IEnumerator BasicAttack(double addedAttack)
     {
+	    battleState = BattleState.UsedAbility;
 	    double playerDexterity = player.GetComplessiveStats().Dexterity;
 	    double playerStrength = player.GetComplessiveStats().Strength;
 	    
@@ -144,6 +167,7 @@ public class BattleSystem: MonoBehaviour
 	    UpdatePlayerHud();
 	    UpdateEnemyHud();
 	    
+	    gameChat.text = "ATTACK!";
 	    yield return new WaitForSeconds(1f);
 	    
 	    if(isDead)
@@ -153,14 +177,23 @@ public class BattleSystem: MonoBehaviour
 	    } else
 	    {
 		    battleState= BattleState.EnemyTurn;
-		    StartCoroutine(EnemyTurn());
+		    StartCoroutine(EnemyTurn(false));
 	    }
 	    
     }
     
-    IEnumerator EnemyTurn()
+    IEnumerator EnemyTurn(bool willWait)
     {
-	    yield return new WaitForSeconds(2f);
+	    Color oldColor = new Color(1,1,1);
+	    int spellNumber = player.GetEquippedSpells().Count;
+	    for (int i = 0; i < spellNumber; i++)
+	    {
+		    oldColor = SpellsButtons[i].GetComponent<Image>().color;
+		    SpellsButtons[i].GetComponent<Image>().color=new Color(0.6f,0.6f,0.6f);
+	    }
+	    
+	    if(willWait)
+			yield return new WaitForSeconds(1f);
 	    gameChat.text="It is the enemy turn";
 	    
 	    bool isDone=false;
@@ -200,6 +233,11 @@ public class BattleSystem: MonoBehaviour
 	    
 	    yield return new WaitForSeconds(1f);
 	    
+	    for (int i = 0; i < spellNumber; i++)
+	    {
+		    SpellsButtons[i].GetComponent<Image>().color=oldColor;
+	    }
+	    
 	    if(isDead)
 	    {
 		    battleState = BattleState.Lose;
@@ -229,6 +267,7 @@ public class BattleSystem: MonoBehaviour
 	    {
 		    gameChat.text = "You gained " + enemy.difficulty+" XP";
 		    player.AddExperience(enemy.difficulty);
+		    UpdatePlayerHud();
 		    yield return new WaitForSeconds(1f);
 	    }
 	    SceneManager.LoadScene("Map");

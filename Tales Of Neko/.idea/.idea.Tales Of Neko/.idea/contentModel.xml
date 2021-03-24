@@ -21,12 +21,10 @@
           <e p="Item.cs" t="Include" />
           <e p="ItemType.cs" t="Include" />
           <e p="Mob.cs" t="Include" />
-          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerHud.cs" t="Include" />
           <e p="PlayerMov.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
-          <e p="Program.cs" t="Include" />
           <e p="Spell.cs" t="Include" />
           <e p="SpellSlot.cs" t="Include" />
           <e p="Stats.cs" t="Include" />
@@ -49,6 +47,7 @@
               <e p="ChatController.cs" t="Include" />
               <e p="DropdownSample.cs" t="Include" />
               <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="GameManager.cs" t="Include" />
               <e p="ObjectSpin.cs" t="Include" />
               <e p="ShaderPropAnimator.cs" t="Include" />
               <e p="SimpleScript.cs" t="Include" />
