@@ -17,6 +17,6 @@ MonoBehaviour:
   Stats:
     Strength: 0
     Constitution: 0
-    Dexterity: 0
+    Dexterity: 5
     Intelligence: 0
     Wisdom: 4

@@ -48,19 +48,24 @@ public class BattleSystem: MonoBehaviour
         enemy = enemyGo.GetComponent<Mob>();
 
         yield return new WaitForSeconds(1f);
-        if (player.GetComplessiveStats().Dexterity > enemy.Stats.Dexterity)
-        { 
-	        battleState = BattleState.PlayerTurn;
-	        gameChat.text = "You are faster than your enemy, it is your turn!";
-        }
-        else
-        {
-	        battleState = BattleState.EnemyTurn;
-	        gameChat.text = "The enemy is faster than you, it is his turn!";
-	        StartCoroutine(EnemyTurn());
-        }
-        
 
+    }
+
+    public void StartFight()
+    {
+	    if (player.GetComplessiveStats().Dexterity > enemy.Stats.Dexterity)
+	    { 
+		    battleState = BattleState.PlayerTurn;
+		    gameChat.text = "You are faster than your enemy, it is your turn!";
+		    
+	    }
+	    else
+	    {
+		    battleState = BattleState.EnemyTurn;
+		    gameChat.text = "The enemy is faster than you, it is his turn!";
+		    new WaitForSeconds(2f);
+		    StartCoroutine(EnemyTurn());
+	    }
     }
 
     IEnumerator PlayerTurn()
@@ -155,6 +160,7 @@ public class BattleSystem: MonoBehaviour
     
     IEnumerator EnemyTurn()
     {
+	    yield return new WaitForSeconds(2f);
 	    gameChat.text="It is the enemy turn";
 	    
 	    bool isDone=false;

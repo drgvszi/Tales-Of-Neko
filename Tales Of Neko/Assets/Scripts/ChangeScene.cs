@@ -10,6 +10,7 @@ public class ChangeScene : MonoBehaviour
     // Update is called once per frame
     public void ChangerScene()
     {
+        
         SceneManager.LoadScene(Sname);
     }
 }

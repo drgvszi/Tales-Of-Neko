@@ -99,7 +99,7 @@ MonoBehaviour:
   Stats:
     Strength: 20
     Constitution: 7
-    Dexterity: 9
+    Dexterity: 15
     Intelligence: 2
     Wisdom: 15
   Health: 200

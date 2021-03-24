@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Wooden Sword
   ItemType: 0
   Stats:
-    Strength: 5
+    Strength: 2
     Constitution: 0
     Dexterity: 0
     Intelligence: 1
