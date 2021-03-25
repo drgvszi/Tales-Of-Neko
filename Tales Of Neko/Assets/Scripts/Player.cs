@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Tales_of_Neko;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = System.Random;
 
 public class Player:Character
@@ -13,7 +14,7 @@ public class Player:Character
 
     public double Experience;
 
-    public bool canLevelUp = false;
+    [FormerlySerializedAs("canLevelUp")] public int levelStatsUp = 0;
     
     
     public static Player Instance
@@ -84,12 +85,10 @@ public class Player:Character
     public void AddExperience(double experience)
     {
         Experience += experience;
-        if (canLevelUp == false)
-        {
-            if (Experience >= NextLevelXp())
-            {
-                canLevelUp = true;
-            }
+        if (Experience >= NextLevelXp()) {
+                levelStatsUp +=1;
+                Level += 1;
+                Experience = 0;
         }
     }
 

@@ -50,8 +50,8 @@ public class BattleSystem: MonoBehaviour
 	    {
 		    gameChat.text = "Can't escape!";
 	    }
-
 	    new WaitForSeconds(1f);
+	    SceneManager.LoadScene("Map");
     }
     IEnumerator SetupBattle()
     {

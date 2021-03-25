@@ -11,6 +11,7 @@
           <e p="ChangeScene.cs" t="Include" />
           <e p="Character.cs" t="Include" />
           <e p="CharacterClass.cs" t="Include" />
+          <e p="CharacterStats.cs" t="Include" />
           <e p="Combat.cs" t="Include" />
           <e p="CooldownManager.cs" t="Include" />
           <e p="ElementType.cs" t="Include" />
