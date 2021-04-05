@@ -16,7 +16,9 @@ public class Spell : ScriptableObject
 
     public bool IsEquipped = false;
     public bool IsBasicAttack = false;
-   
+
+    public List<KeyCode> Combo;
+    public float ComboTimer;
 
     public Spell(string name,ElementType type,double attackDamage,double maxCooldown,int manaUsage)
     {
@@ -26,6 +28,7 @@ public class Spell : ScriptableObject
         MaxCooldown = maxCooldown;
         ManaUsage = manaUsage;
         CurrentCooldown = 0;
+        Combo = new List<KeyCode>();
     }
         
     public bool IsReady()
