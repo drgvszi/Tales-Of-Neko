@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1b56ff13788e8429a295eaa76683f0, type: 3}
   m_Name: QuickAttack
   m_EditorClassIdentifier: 
-  Name: QuickAttack
-  Type: 0
+  Name: Time Stop
+  Type: 4
   AttackDamage: 1
   CurrentCooldown: 0
   MaxCooldown: 1

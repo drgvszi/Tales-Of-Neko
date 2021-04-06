@@ -13,7 +13,7 @@ public class Spell : ScriptableObject
     public double CurrentCooldown;
     public double MaxCooldown;
     public int ManaUsage;
-
+    public Animator spellanim;
     public bool IsEquipped = false;
     public bool IsBasicAttack = false;
    
