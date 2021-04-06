@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using Tales_of_Neko;
 using UnityEngine;
@@ -29,8 +30,10 @@ public class BattleSystem: MonoBehaviour
     public Mob enemy;
 
     public Text gameChat;
+    public Text panelText;
+    public Image panelTimer;
 
-    public List<GameObject> SpellsButtons;
+    [FormerlySerializedAs("SpellsButtons")] public List<GameObject> spellsButtons;
     
     void Start()
     {
@@ -103,13 +106,76 @@ public class BattleSystem: MonoBehaviour
 	    }
 	    else
 	    {
-		    UseSpell(spellSlot.Spell);
+		    StartCoroutine(UseSpell(spellSlot.Spell));
 	    }
     }
-    public void UseSpell(Spell spell)
+    IEnumerator UseSpell(Spell spell)
     { 
-	    if (battleState != BattleState.PlayerTurn) return;
-	    StartCoroutine(ManaAttack(spell));
+	    if (battleState != BattleState.PlayerTurn) yield break;
+	    bool comboSuceded=false;
+
+	    List<KeyCode> pressedKeys = new List<KeyCode>();
+
+	    panelText.text = "Press the combo keys!";
+	    yield return new WaitForSeconds(0.6f);
+	    panelTimer.enabled = !panelTimer.enabled;
+	    
+	    
+	    float startTime = Time.time;
+	    int i = 0;
+	    while (pressedKeys.Count < spell.Combo.Count && Time.time - startTime <= spell.ComboTimer) {
+		    yield return null;
+		    panelTimer.fillAmount = (Time.time - startTime) / spell.ComboTimer;
+		    foreach (KeyCode kcode in Enum.GetValues(typeof(KeyCode)))
+		    {
+			    if (Input.GetKey(kcode))
+			    {
+				    switch (kcode)
+				    {
+					    case KeyCode.UpArrow:
+						    panelText.text = "⇧";
+						    break;
+					    case KeyCode.RightArrow:
+						    panelText.text = "⇨";
+						    break;
+					    case KeyCode.LeftArrow:
+						    panelText.text = "⇦";
+						    break;
+					    case KeyCode.DownArrow:
+						    panelText.text = "⇩";
+						    break;
+					    default:
+						    panelText.text = kcode.ToString();
+						    break;
+
+				    }
+				    
+				    pressedKeys.Add(kcode);
+					Input.ResetInputAxes();
+			    }
+		    }
+	    }
+
+	    panelText.text = "";
+	    panelTimer.enabled = !panelTimer.enabled;
+	    if (pressedKeys.SequenceEqual(spell.Combo)) {
+		    comboSuceded = true;
+	    }
+	    
+	    
+	    if (comboSuceded) {
+		    StartCoroutine(ManaAttack(spell));
+	    }
+	    else
+	    {
+		    gameChat.text = spell.Name+" failed!";
+	    
+		    yield return new WaitForSeconds(1f);
+		    
+		    battleState= BattleState.EnemyTurn;
+			    StartCoroutine(EnemyTurn(false));
+	    }
+	    
 
     }
     public void UseBasicAttack(double addedAttack)
@@ -132,9 +198,9 @@ public class BattleSystem: MonoBehaviour
 		    enemy.TakeDamage(playerWisdom * 0.8 + playerStrength * 0.3 + spell.AttackDamage);
 		    
 		    bool isDead = !enemy.IsAlive();
-
-		    UpdatePlayerHud();
-		    UpdateEnemyHud();
+		    
+		    StartCoroutine(UpdatePlayerHud());
+		    StartCoroutine(UpdateEnemyHud());
 
 		    gameChat.text = "GO: " + spell.Name+"!!";
 	    
@@ -154,6 +220,7 @@ public class BattleSystem: MonoBehaviour
 	   
     }
     
+    // ReSharper disable Unity.PerformanceAnalysis
     IEnumerator BasicAttack(double addedAttack)
     {
 	    battleState = BattleState.UsedAbility;
@@ -164,9 +231,9 @@ public class BattleSystem: MonoBehaviour
 	    
 	    bool isDead = !enemy.IsAlive();
 	    
-	    UpdatePlayerHud();
-	    UpdateEnemyHud();
-	    
+	    StartCoroutine(UpdatePlayerHud());
+	    StartCoroutine(UpdateEnemyHud());
+
 	    gameChat.text = "ATTACK!";
 	    yield return new WaitForSeconds(1f);
 	    
@@ -182,21 +249,20 @@ public class BattleSystem: MonoBehaviour
 	    
     }
     
+    // ReSharper disable Unity.PerformanceAnalysis
     IEnumerator EnemyTurn(bool willWait)
     {
 	    Color oldColor = new Color(1,1,1);
 	    int spellNumber = player.GetEquippedSpells().Count;
 	    for (int i = 0; i < spellNumber; i++)
 	    {
-		    oldColor = SpellsButtons[i].GetComponent<Image>().color;
-		    SpellsButtons[i].GetComponent<Image>().color=new Color(0.6f,0.6f,0.6f);
+		    oldColor = spellsButtons[i].GetComponent<Image>().color;
+		    spellsButtons[i].GetComponent<Image>().color=new Color(0.6f,0.6f,0.6f);
 	    }
 	    
 	    if(willWait)
 			yield return new WaitForSeconds(1f);
 	    gameChat.text="It is the enemy turn";
-	    
-	    bool isDone=false;
 
 	    double randomNumber = Random.value;
 	    if (randomNumber <= 0.3)
@@ -228,14 +294,14 @@ public class BattleSystem: MonoBehaviour
 	    }
 	    bool isDead = !player.IsAlive();
 	    
-	    UpdatePlayerHud();
-	    UpdateEnemyHud();
+	    StartCoroutine(UpdatePlayerHud());
+	    StartCoroutine(UpdateEnemyHud());
 	    
 	    yield return new WaitForSeconds(1f);
 	    
 	    for (int i = 0; i < spellNumber; i++)
 	    {
-		    SpellsButtons[i].GetComponent<Image>().color=oldColor;
+		    spellsButtons[i].GetComponent<Image>().color=oldColor;
 	    }
 	    
 	    if(isDead)
@@ -249,14 +315,18 @@ public class BattleSystem: MonoBehaviour
 	    }
     }
 
-    private void UpdateEnemyHud()
+    IEnumerator UpdateEnemyHud()
     {
 	    playerHud.Set(player);
+	    yield return new WaitForSeconds(0.7f);
+	    playerHud.SetTransparent(player);
     }
 
-    private void UpdatePlayerHud()
+    IEnumerator UpdatePlayerHud()
     {
 	    enemyHud.Set(enemy);
+	    yield return new WaitForSeconds(0.7f);
+	    enemyHud.SetTransparent(enemy);
     }
 
     IEnumerator EndBattle()
@@ -267,7 +337,9 @@ public class BattleSystem: MonoBehaviour
 	    {
 		    gameChat.text = "You gained " + enemy.difficulty+" XP";
 		    player.AddExperience(enemy.difficulty);
-		    UpdatePlayerHud();
+		    
+		    StartCoroutine(UpdatePlayerHud());
+		    
 		    yield return new WaitForSeconds(1f);
 	    }
 	    SceneManager.LoadScene("Map");

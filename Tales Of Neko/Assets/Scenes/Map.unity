@@ -3735,6 +3735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 621293736}
   - component: {fileID: 621293735}
+  - component: {fileID: 621293737}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3772,6 +3773,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &621293737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621293734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7337856277aa3ba4a988e9ee20144964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Quest: {fileID: 11400000, guid: 68ebe6dbb4a76de4d83158214706edb0, type: 2}
 --- !u!1 &630993889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,6 +4342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4790568275257094810, guid: de75a033f34ac48409e90b96df7545cb, type: 3}
+  enemyGo: {fileID: 743910290}
 --- !u!58 &743910293
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5474,6 +5489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7158455307816390169, guid: a0eb83dfa8e411844920a5ba620407c2, type: 3}
+  enemyGo: {fileID: 875408166}
 --- !u!1 &898693044
 GameObject:
   m_ObjectHideFlags: 0
@@ -35012,6 +35028,9 @@ MonoBehaviour:
   HealthSlider: {fileID: 1977308788}
   ManaSlider: {fileID: 1695469888}
   XpBar: {fileID: 0}
+  HealthSliderTransparent: {fileID: 0}
+  ManaSliderTransparent: {fileID: 0}
+  XpBarTransparent: {fileID: 0}
   Player: {fileID: 0}
 --- !u!1 &1494383316
 GameObject:
@@ -36271,7 +36290,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1584857802}
   m_HandleRect: {fileID: 0}
@@ -37501,7 +37520,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1860521014}
   m_HandleRect: {fileID: 0}

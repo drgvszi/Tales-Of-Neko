@@ -10,13 +10,16 @@ public class PlayerHud:MonoBehaviour
     public Slider HealthSlider;
     public Slider ManaSlider;
     public Slider XpBar;
+
+    public Slider HealthSliderTransparent;
+    public Slider ManaSliderTransparent;
+    public Slider XpBarTransparent;
     
     public Player Player;
     public void Start()
     {
 
         Player = GameManager.Instance.player;
-        print(1);
 
         if (nameTextBox!=null)
         {
@@ -35,6 +38,20 @@ public class PlayerHud:MonoBehaviour
             XpBar.maxValue = (float) Player.NextLevelXp();
             XpBar.value = (float) Player.Experience;
         }
+
+        if (HealthSliderTransparent !=null)
+        {
+            HealthSliderTransparent.maxValue = (float) Player.MaxHealth;
+            HealthSliderTransparent.value = (float) Player.Health;
+
+            ManaSliderTransparent.maxValue = (float) Player.MaxMana;
+            ManaSliderTransparent.value = (float) Player.Mana;
+            
+            XpBarTransparent.maxValue = (float) Player.NextLevelXp();
+            XpBarTransparent.value = (float) Player.Experience;
+        }
+        
+           
     }
 
     public void Set(Player player)
@@ -46,5 +63,16 @@ public class PlayerHud:MonoBehaviour
         {
             XpBar.value = (float) Player.Experience;
         }
+    }
+
+    public void SetTransparent(Player player)
+    { 
+        HealthSliderTransparent.value = (float) player.Health;
+        ManaSliderTransparent.value = (float) player.Mana;
+        if (XpBarTransparent != null)
+        {
+            XpBarTransparent.value = (float) Player.Experience;
+        }
+        
     }
 }
