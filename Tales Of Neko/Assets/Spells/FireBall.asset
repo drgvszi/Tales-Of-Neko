@@ -18,7 +18,9 @@ MonoBehaviour:
   CurrentCooldown: 0
   MaxCooldown: 10
   ManaUsage: 2
+  spellanim: {fileID: 0}
   IsEquipped: 1
   IsBasicAttack: 0
   Combo: 110100001201000012010000
   ComboTimer: 2.5
+  AnimationState: FireBall

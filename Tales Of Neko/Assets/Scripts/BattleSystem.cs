@@ -33,9 +33,14 @@ public class BattleSystem: MonoBehaviour
     public Text panelText;
     public Image panelTimer;
 
-    [FormerlySerializedAs("SpellsButtons")] public List<GameObject> spellsButtons;
-    
-    void Start()
+    public GameObject GameOverGO;
+
+    public Animator TargetedSpellPlayerAnimator;
+    public Animator BlastSpellPlayerAnimator;
+
+	    [FormerlySerializedAs("SpellsButtons")] public List<GameObject> spellsButtons;
+
+	    void Start()
     {
         battleState = BattleState.Start;
         StartCoroutine(SetupBattle());
@@ -199,10 +204,17 @@ public class BattleSystem: MonoBehaviour
 		    
 		    bool isDead = !enemy.IsAlive();
 		    
+		    
+		    gameChat.text = "GO: " + spell.Name+"!!";
+		    Animator animator = spell.IsTarget == true? TargetedSpellPlayerAnimator : BlastSpellPlayerAnimator; 
+		    animator.Play(spell.AnimationState);
+		    yield return new WaitForSeconds(1f);
+		    
+		    
 		    StartCoroutine(UpdatePlayerHud());
 		    StartCoroutine(UpdateEnemyHud());
 
-		    gameChat.text = "GO: " + spell.Name+"!!";
+		    
 	    
 		    yield return new WaitForSeconds(1f);
 	    
@@ -341,8 +353,13 @@ public class BattleSystem: MonoBehaviour
 		    StartCoroutine(UpdatePlayerHud());
 		    
 		    yield return new WaitForSeconds(1f);
+		    SceneManager.LoadScene("Map");
 	    }
-	    SceneManager.LoadScene("Map");
+	    else
+	    {
+		    GameOverGO.SetActive(true);
+	    }
+	    
 
     }
 

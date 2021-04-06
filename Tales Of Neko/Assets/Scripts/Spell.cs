@@ -20,6 +20,9 @@ public class Spell : ScriptableObject
     public List<KeyCode> Combo;
     public float ComboTimer;
 
+    public string AnimationState;
+    public bool IsTarget;
+
     public Spell(string name,ElementType type,double attackDamage,double maxCooldown,int manaUsage)
     {
         Name = name;

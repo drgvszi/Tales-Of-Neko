@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1b56ff13788e8429a295eaa76683f0, type: 3}
-  m_Name: QuickAttack
+  m_Name: TimeStop
   m_EditorClassIdentifier: 
   Name: Time Stop
   Type: 4
@@ -18,5 +18,10 @@ MonoBehaviour:
   CurrentCooldown: 0
   MaxCooldown: 1
   ManaUsage: 0
+  spellanim: {fileID: 0}
   IsEquipped: 1
-  IsBasicAttack: 1
+  IsBasicAttack: 0
+  Combo: 12010000140100001301000011010000
+  ComboTimer: 3
+  AnimationState: TimeStop
+  IsTarget: 1
