@@ -10,9 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b75fe572564749118c20fa187b7f8c7e, type: 3}
-  m_Name: New Quest
+  m_Name: quest_0_1
   m_EditorClassIdentifier: 
-  Name: 
-  Summary: 
-  Story: []
-  Reward: 0
+  Name: Protect the Golden Fish
+  Summary: Deal with the intruder intending to steal the Golden Fish.
+  Story:
+  - Who: Royal Guard Captain
+    What: Your Majesty, I bring dire news!
+  - Who: Basted
+    What: Report, Captain!
+  - Who: Royal Guard Captain
+    What: The troops guarding the Chamber of the Golden Fish have reported an intruder
+      trying to get through.
+  - Who: Basted
+    What: What's the situation?
+  - Who: Royal Guard Captain
+    What: Unfortunately, our forces have yet to neutralize the trespasser.
+  - Who: Royal Guard Captain
+    What: I'm ashamed to admit that this threath far surpases the level of our troops.
+  - Who: Royal Guard Captain
+    What: I believe you are the only one suited to deal with this, your Majesty!
+  - Who: Basted
+    What: Where is the invader located?
+  - Who: Royal Guard Captain
+    What: The last report placed the target in the Hall of the Ancients, he's making
+      haste to the Chamber!
+  - Who: Royal Guard Captain
+    What: You must act swifly, your Grace. Intercept the intruder before he reaches
+      the Golden Fish!
+  - Who: Basted
+    What: I will not fail my people...
+  Reward: 50
