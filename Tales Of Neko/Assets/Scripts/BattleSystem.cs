@@ -130,7 +130,26 @@ public class BattleSystem: MonoBehaviour
 		    {
 			    if (Input.GetKey(kcode))
 			    {
-				    panelText.text = kcode.ToString();
+				    switch (kcode)
+				    {
+					    case KeyCode.UpArrow:
+						    panelText.text = "⇧";
+						    break;
+					    case KeyCode.RightArrow:
+						    panelText.text = "⇨";
+						    break;
+					    case KeyCode.LeftArrow:
+						    panelText.text = "⇦";
+						    break;
+					    case KeyCode.DownArrow:
+						    panelText.text = "⇩";
+						    break;
+					    default:
+						    panelText.text = kcode.ToString();
+						    break;
+
+				    }
+				    
 				    pressedKeys.Add(kcode);
 					Input.ResetInputAxes();
 			    }

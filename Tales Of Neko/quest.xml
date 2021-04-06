@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<quest>
+	<name>New Quest</name>
+	<summary>Ceva merge</summary>
+	<reward>12.5</reward>
+	<story>
+		<me>Ce faci?</me>
+		<npc>bine, tu?</npc>
+		<me>bine</me>
+	</story>
+</quest>

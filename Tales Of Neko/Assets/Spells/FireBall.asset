@@ -21,3 +21,4 @@ MonoBehaviour:
   IsEquipped: 1
   IsBasicAttack: 0
   Combo: 110100001201000012010000
+  ComboTimer: 2.5

@@ -11,12 +11,12 @@ public class EnemyHud:MonoBehaviour
     public Slider HealthSliderTransparent;
     public Slider ManaSliderTransparent;
     
-    public GameObject enemyGo;
     public Mob Enemy;
     public void Start()
     {
         
-        Enemy = enemyGo.GetComponent<Mob>();
+
+        Enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
 
         nameTextBox.text = Enemy.name;
         levelTextBox.text =  "  Lv. " + Enemy.Level;
