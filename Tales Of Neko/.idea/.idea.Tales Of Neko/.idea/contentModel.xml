@@ -11,6 +11,7 @@
           <e p="ChangeScene.cs" t="Include" />
           <e p="Character.cs" t="Include" />
           <e p="CharacterClass.cs" t="Include" />
+          <e p="CharacterSpells.cs" t="Include" />
           <e p="CharacterStats.cs" t="Include" />
           <e p="Combat.cs" t="Include" />
           <e p="CooldownManager.cs" t="Include" />
@@ -22,9 +23,11 @@
           <e p="InCombatSpellManager.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="Item.cs" t="Include" />
+          <e p="ItemDetails.cs" t="Include" />
           <e p="ItemType.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="Mob.cs" t="Include" />
+          <e p="NpcScript.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerHud.cs" t="Include" />
           <e p="PlayerMov.cs" t="Include" />

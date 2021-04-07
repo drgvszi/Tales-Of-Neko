@@ -8,7 +8,7 @@ public class PlayerMov : MonoBehaviour
     public Rigidbody2D RB;
     Vector2 mvm;
     public Animator animator;
-    
+
     // Update is called once per frame
     void Update()
     {

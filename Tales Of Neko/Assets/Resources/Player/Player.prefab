@@ -107,6 +107,8 @@ MonoBehaviour:
   MaxHealth: 100
   MaxMana: 100
   Spells:
+  - {fileID: 11400000, guid: 3715e083d0a20fa47aa54292b2232be9, type: 2}
+  - {fileID: 11400000, guid: dc190cc8e48e51d4fae39b9f6393fa34, type: 2}
   - {fileID: 11400000, guid: 04d54bd5b6465d34c9aab11bb4a4aa1b, type: 2}
   - {fileID: 11400000, guid: 5cec8c864258ac84db56962bf33ed3c4, type: 2}
   Level: 6
@@ -120,5 +122,7 @@ MonoBehaviour:
       Weapon: {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     Items:
     - {fileID: 11400000, guid: 56aff5a78f71b4a4399e822fc6d3f294, type: 2}
-  Experience: 4
+  Experience: 8
   levelStatsUp: 5
+  Quests:
+  - {fileID: 0}

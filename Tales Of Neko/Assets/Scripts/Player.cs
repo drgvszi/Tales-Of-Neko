@@ -15,8 +15,8 @@ public class Player:Character
     public double Experience;
 
     [FormerlySerializedAs("canLevelUp")] public int levelStatsUp = 0;
-    
-    
+
+    public List<Quest> Quests;
     public static Player Instance
     {
         get
@@ -34,6 +34,7 @@ public class Player:Character
         Experience = 0;
         Inventory = new Inventory();
         Spells= new List<Spell>();
+        Quests = new List<Quest>();
     }
     private Player(string name, CharacterClass characterClass, float health, float mana):base(name)
     {
@@ -43,6 +44,7 @@ public class Player:Character
         Level = 1;
         Inventory = new Inventory();
         Spells= new List<Spell>();
+        Quests = new List<Quest>();
         Experience = 0;
 
     }
@@ -55,6 +57,7 @@ public class Player:Character
         Level = 1;
         Inventory = new Inventory();
         Spells= new List<Spell>();
+        Quests = new List<Quest>();
         Experience = 0;
 
     }
