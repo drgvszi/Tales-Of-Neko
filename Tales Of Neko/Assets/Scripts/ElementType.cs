@@ -2,6 +2,6 @@
 {
     public enum ElementType
     {
-        Fire,Water,Earth,Air,Arcane,Light,Dark
+        Fire,Water,Earth,Air,Arcane,Light,Dark,Normal
     }
 }
