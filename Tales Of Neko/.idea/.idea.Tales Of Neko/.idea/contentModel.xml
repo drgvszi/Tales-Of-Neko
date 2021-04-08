@@ -19,6 +19,7 @@
           <e p="ElementType.cs" t="Include" />
           <e p="EnemyHud.cs" t="Include" />
           <e p="EquippedItems.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="GameOver.cs" t="Include" />
           <e p="InCombatSpellManager.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
@@ -38,6 +39,7 @@
           <e p="Spell.cs" t="Include" />
           <e p="SpellItemDetails.cs" t="Include" />
           <e p="SpellSlot.cs" t="Include" />
+          <e p="SpellsMenu.cs" t="Include" />
           <e p="Stats.cs" t="Include" />
           <e p="TriggerIt.cs" t="Include" />
         </e>
@@ -58,7 +60,6 @@
               <e p="ChatController.cs" t="Include" />
               <e p="DropdownSample.cs" t="Include" />
               <e p="EnvMapAnimator.cs" t="Include" />
-              <e p="GameManager.cs" t="Include" />
               <e p="ObjectSpin.cs" t="Include" />
               <e p="ShaderPropAnimator.cs" t="Include" />
               <e p="SimpleScript.cs" t="Include" />

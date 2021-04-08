@@ -42,7 +42,7 @@ public class NpcScript : MonoBehaviour
     {
         PlayerRigidBody.constraints = RigidbodyConstraints2D.None;
         GameManager.Instance.player.Quests.Add(Quest);
-        
+
         DialogueMenu.SetActive(false);
     }
 
