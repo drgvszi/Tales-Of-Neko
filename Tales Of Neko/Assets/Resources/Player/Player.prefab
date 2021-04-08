@@ -111,6 +111,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dc190cc8e48e51d4fae39b9f6393fa34, type: 2}
   - {fileID: 11400000, guid: 04d54bd5b6465d34c9aab11bb4a4aa1b, type: 2}
   - {fileID: 11400000, guid: 5cec8c864258ac84db56962bf33ed3c4, type: 2}
+  - {fileID: 11400000, guid: 0d6144c98bff4ab4c8a54e064b91c4cb, type: 2}
+  - {fileID: 11400000, guid: 5e9150eb14df85f4aa95a044d170e89f, type: 2}
+  - {fileID: 11400000, guid: 0921d54f416a17a4daa678615d8c51a3, type: 2}
+  - {fileID: 11400000, guid: fffab2e2c8afb084fa06634d2f019136, type: 2}
+  - {fileID: 11400000, guid: 8c95919d9f241144e86f71040a8220f4, type: 2}
+  - {fileID: 11400000, guid: 2f3a781f46bdcc0499f56199300f10a3, type: 2}
   Level: 6
   Class: 0
   Inventory:

@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Slash
   Type: 7
-  AttackDamage: 4
+  AttackDamage: 3
   CurrentCooldown: 0
   MaxCooldown: 0
   ManaUsage: 0
   spellanim: {fileID: 0}
-  IsEquipped: 0
+  IsEquipped: 1
   IsBasicAttack: 0
-  Combo: 
-  ComboTimer: 0
-  AnimationState: 
-  IsTarget: 0
+  Combo: 13010000
+  ComboTimer: 2
+  AnimationState: BasicAttack
+  IsTarget: 1

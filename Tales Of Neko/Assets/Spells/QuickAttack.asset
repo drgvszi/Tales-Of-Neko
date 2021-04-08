@@ -19,9 +19,9 @@ MonoBehaviour:
   MaxCooldown: 0
   ManaUsage: 0
   spellanim: {fileID: 0}
-  IsEquipped: 0
-  IsBasicAttack: 1
-  Combo: 
-  ComboTimer: 0
-  AnimationState: 
-  IsTarget: 0
+  IsEquipped: 1
+  IsBasicAttack: 0
+  Combo: 1301000013010000
+  ComboTimer: 2
+  AnimationState: QuickAttack
+  IsTarget: 1
