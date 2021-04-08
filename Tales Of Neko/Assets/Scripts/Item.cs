@@ -7,6 +7,7 @@ public class Item:ScriptableObject
     [Header("Item characteristics")]
     public string Name;
     public ItemType ItemType;
+    public string Description;
         
     [Header("Item stats")]
     public Stats Stats;

@@ -121,8 +121,9 @@ MonoBehaviour:
       Boots: {fileID: 11400000, guid: 2942640c282644c4ba8264eaadaf0bf8, type: 2}
       Weapon: {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     Items:
-    - {fileID: 11400000, guid: 56aff5a78f71b4a4399e822fc6d3f294, type: 2}
+    - {fileID: 11400000, guid: dd9648735eb61a342bb814e120305f7f, type: 2}
+    - {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
+    - {fileID: 11400000, guid: 510ca40a0ea5be44a9b0ad2254a6f510, type: 2}
   Experience: 8
   levelStatsUp: 5
-  Quests:
-  - {fileID: 0}
+  Quests: []

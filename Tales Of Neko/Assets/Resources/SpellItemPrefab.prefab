@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6647663364293190254}
   - component: {fileID: 5038498424469179134}
   m_Layer: 5
-  m_Name: Item
+  m_Name: SpellItemPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,11 +123,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5403697326077657042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3053e4b762f4ef2bc0ccd2f4df05869, type: 3}
+  m_Script: {fileID: 11500000, guid: 472dbc051d92456d86797129f316054a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 9177486114124083385}
-  Spell: {fileID: 0}
+  Class: {fileID: 0}
 --- !u!114 &5038498424469179134
 MonoBehaviour:
   m_ObjectHideFlags: 0

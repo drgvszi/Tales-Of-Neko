@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 namespace Tales_of_Neko
 {
-    public class ItemDetails:MonoBehaviour
+    public class ItemDetails<T>:MonoBehaviour
     {
         public Text Text;
-        public Spell Spell;
+        public T Class;
         
         
 

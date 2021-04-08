@@ -54,10 +54,10 @@ public class CharacterSpells : MonoBehaviour
             }
             spawnedItem.transform.SetParent(Content.transform,false);
 
-            ItemDetails itemDetails = spawnedItem.GetComponentInChildren<ItemDetails>();
+            ItemDetails<Spell> itemDetails = spawnedItem.GetComponentInChildren<ItemDetails<Spell>>();
             itemDetails.Text.text = unequippedSpells[i].Name + "  TYPE: " + unequippedSpells[i].Type.ToString() + 
                                     "   ATK: " + unequippedSpells[i].AttackDamage;
-            itemDetails.Spell = unequippedSpells[i];
+            itemDetails.Class = unequippedSpells[i];
         } 
         
         
@@ -68,19 +68,19 @@ public class CharacterSpells : MonoBehaviour
     private void Update()
     {
         if(_SelectedSpellGO!=null){
-            ItemDetails itemDetails = _SelectedSpellGO.GetComponentInChildren<ItemDetails>();
+            ItemDetails<Spell> itemDetails = _SelectedSpellGO.GetComponentInChildren<ItemDetails<Spell>>();
             if ( itemDetails != null)
             {
                 if (_PressedSpellSlot != -1)
                 {
-                    SpellSlots[_PressedSpellSlot].GetComponentInChildren<Text>().text = itemDetails.Spell.Name;
-                    itemDetails.Spell.IsEquipped = true;
+                    SpellSlots[_PressedSpellSlot].GetComponentInChildren<Text>().text = itemDetails.Class.Name;
+                    itemDetails.Class.IsEquipped = true;
                     SpellSlot spellSlot = SpellSlots[_PressedSpellSlot].GetComponent<SpellSlot>();
                     if (spellSlot.Spell)
                     {
                         spellSlot.Spell.IsEquipped = false;
                     }
-                    spellSlot.Spell = itemDetails.Spell;
+                    spellSlot.Spell = itemDetails.Class;
                     spellSlot.IsSet = true;
                     
                     

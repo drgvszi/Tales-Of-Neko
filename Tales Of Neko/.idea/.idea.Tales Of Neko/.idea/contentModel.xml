@@ -22,6 +22,8 @@
           <e p="GameOver.cs" t="Include" />
           <e p="InCombatSpellManager.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
+          <e p="InventoryItemDetails.cs" t="Include" />
+          <e p="InventoryMenu.cs" t="Include" />
           <e p="Item.cs" t="Include" />
           <e p="ItemDetails.cs" t="Include" />
           <e p="ItemType.cs" t="Include" />
@@ -34,6 +36,7 @@
           <e p="PlayerMovement.cs" t="Include" />
           <e p="Quest.cs" t="Include" />
           <e p="Spell.cs" t="Include" />
+          <e p="SpellItemDetails.cs" t="Include" />
           <e p="SpellSlot.cs" t="Include" />
           <e p="Stats.cs" t="Include" />
           <e p="TriggerIt.cs" t="Include" />
