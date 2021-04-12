@@ -1,0 +1,1725 @@
+fileFormatVersion: 2
+guid: 55ba4015912ff4942bd2b2fda585ccee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3590310494376783238
+    second: Thunder Spells_0
+  - first:
+      213: 905838395862914485
+    second: Thunder Spells_1
+  - first:
+      213: 8312117691269515187
+    second: Thunder Spells_2
+  - first:
+      213: -7795796222434474331
+    second: Thunder Spells_3
+  - first:
+      213: -4011815902257482037
+    second: Thunder Spells_4
+  - first:
+      213: -6532086464419530057
+    second: Thunder Spells_5
+  - first:
+      213: -3648528680793974842
+    second: Thunder Spells_6
+  - first:
+      213: -5292120714198012553
+    second: Thunder Spells_7
+  - first:
+      213: -5419360382455929332
+    second: Thunder Spells_8
+  - first:
+      213: -1161988562444711147
+    second: Thunder Spells_9
+  - first:
+      213: -6697484376176995934
+    second: Thunder Spells_10
+  - first:
+      213: -6989980032095038003
+    second: Thunder Spells_11
+  - first:
+      213: 1184158662231065326
+    second: Thunder Spells_12
+  - first:
+      213: -6099400830330507686
+    second: Thunder Spells_13
+  - first:
+      213: 5140428039098274963
+    second: Thunder Spells_14
+  - first:
+      213: 1789977336900922479
+    second: Thunder Spells_15
+  - first:
+      213: 2656125651617891522
+    second: Thunder Spells_16
+  - first:
+      213: 375956493487701108
+    second: Thunder Spells_17
+  - first:
+      213: -4672200079627772636
+    second: Thunder Spells_18
+  - first:
+      213: -7952898090015899360
+    second: Thunder Spells_19
+  - first:
+      213: 4076092306259292954
+    second: Thunder Spells_20
+  - first:
+      213: -1274714286592966599
+    second: Thunder Spells_21
+  - first:
+      213: -7000632633435737707
+    second: Thunder Spells_22
+  - first:
+      213: 1617264885492160002
+    second: Thunder Spells_23
+  - first:
+      213: -4987978107950029819
+    second: Thunder Spells_24
+  - first:
+      213: 2175645122189038661
+    second: Thunder Spells_25
+  - first:
+      213: 5564487850801167319
+    second: Thunder Spells_26
+  - first:
+      213: 2546845107996287096
+    second: Thunder Spells_27
+  - first:
+      213: 3817536682844731661
+    second: Thunder Spells_28
+  - first:
+      213: -6420271457000864709
+    second: Thunder Spells_29
+  - first:
+      213: 4125207666407329422
+    second: Thunder Spells_30
+  - first:
+      213: 851417069698029234
+    second: Thunder Spells_31
+  - first:
+      213: -546584843830821540
+    second: Thunder Spells_32
+  - first:
+      213: 4098980103862003534
+    second: Thunder Spells_33
+  - first:
+      213: 1296799328386956584
+    second: Thunder Spells_34
+  - first:
+      213: -7760463411000948912
+    second: Thunder Spells_35
+  - first:
+      213: -4200063410383386951
+    second: Thunder Spells_36
+  - first:
+      213: -6089167940033008574
+    second: Thunder Spells_37
+  - first:
+      213: -531840598088933588
+    second: Thunder Spells_38
+  - first:
+      213: -1484282910785577687
+    second: Thunder Spells_39
+  - first:
+      213: 7178845712126662684
+    second: Thunder Spells_40
+  - first:
+      213: -4710800953387809744
+    second: Thunder Spells_41
+  - first:
+      213: 446530294582967605
+    second: Thunder Spells_42
+  - first:
+      213: -4974843927811855608
+    second: Thunder Spells_43
+  - first:
+      213: -7190465370388772228
+    second: Thunder Spells_44
+  - first:
+      213: 1763970941465847701
+    second: Thunder Spells_45
+  - first:
+      213: 8872806824065521100
+    second: Thunder Spells_46
+  - first:
+      213: -3937295266369381683
+    second: Thunder Spells_47
+  - first:
+      213: -7482659883037986910
+    second: Thunder Spells_48
+  - first:
+      213: -985673481145317717
+    second: Thunder Spells_49
+  - first:
+      213: 580223683772708233
+    second: Thunder Spells_50
+  - first:
+      213: -1434920310318811620
+    second: Thunder Spells_51
+  - first:
+      213: 3007851242048434172
+    second: Thunder Spells_52
+  - first:
+      213: 6747897621757235231
+    second: Thunder Spells_53
+  - first:
+      213: 2326301204814815196
+    second: Thunder Spells_54
+  - first:
+      213: 5078120957286206356
+    second: Thunder Spells_55
+  - first:
+      213: 8973506417696752875
+    second: Thunder Spells_56
+  - first:
+      213: 5062550477421030858
+    second: Thunder Spells_57
+  - first:
+      213: 926000432665316403
+    second: Thunder Spells_58
+  - first:
+      213: 7634162085974604491
+    second: Thunder Spells_59
+  - first:
+      213: 5756468379554416818
+    second: Thunder Spells_60
+  - first:
+      213: 1080766761994496701
+    second: Thunder Spells_61
+  - first:
+      213: 6424203829265538899
+    second: Thunder Spells_62
+  - first:
+      213: -807859496958466471
+    second: Thunder Spells_63
+  - first:
+      213: 812684347202241706
+    second: Thunder Spells_64
+  - first:
+      213: -4259557748352269911
+    second: Thunder Spells_65
+  - first:
+      213: 2356222433781661237
+    second: Thunder Spells_66
+  - first:
+      213: -7710800827303091472
+    second: Thunder Spells_67
+  - first:
+      213: -6415652110170343268
+    second: Thunder Spells_68
+  - first:
+      213: 2283345340114497153
+    second: Thunder Spells_69
+  - first:
+      213: -3190021839757325217
+    second: Thunder Spells_70
+  - first:
+      213: 8587821434723332750
+    second: Thunder Spells_71
+  - first:
+      213: 4170983755584514862
+    second: Thunder Spells_72
+  - first:
+      213: 8552995480985081812
+    second: Thunder Spells_73
+  - first:
+      213: 4071210798366191309
+    second: Thunder Spells_74
+  - first:
+      213: 4610192667761857926
+    second: Thunder Spells_75
+  - first:
+      213: -5874888675028492972
+    second: Thunder Spells_76
+  - first:
+      213: -3332690533923388968
+    second: Thunder Spells_77
+  - first:
+      213: 6283245580336329074
+    second: Thunder Spells_78
+  - first:
+      213: -7024124528129659401
+    second: Thunder Spells_79
+  - first:
+      213: 5218501376750600908
+    second: Thunder Spells_80
+  - first:
+      213: -2877526965674952245
+    second: Thunder Spells_81
+  - first:
+      213: -7038921502515287246
+    second: Thunder Spells_82
+  - first:
+      213: -4206544615597948382
+    second: Thunder Spells_83
+  - first:
+      213: -6893935995487671190
+    second: Thunder Spells_84
+  - first:
+      213: -8461923029686327854
+    second: Thunder Spells_85
+  - first:
+      213: -256100192258833033
+    second: Thunder Spells_86
+  - first:
+      213: -7767413442626864116
+    second: Thunder Spells_87
+  - first:
+      213: 7267361406027402559
+    second: Thunder Spells_88
+  - first:
+      213: 27254388648138891
+    second: Thunder Spells_89
+  - first:
+      213: 3644538680679691484
+    second: Thunder Spells_90
+  - first:
+      213: -8449731153676004617
+    second: Thunder Spells_91
+  - first:
+      213: 4970590667268489413
+    second: Thunder Spells_92
+  - first:
+      213: -7207645666532167478
+    second: Thunder Spells_93
+  - first:
+      213: -8084644296429115697
+    second: Thunder Spells_94
+  - first:
+      213: 6008974133884792370
+    second: Thunder Spells_95
+  - first:
+      213: 6790850265238459643
+    second: Thunder Spells_96
+  - first:
+      213: 7674339852926743165
+    second: Thunder Spells_97
+  - first:
+      213: -6761247898159007157
+    second: Thunder Spells_98
+  - first:
+      213: 992487247866735615
+    second: Thunder Spells_99
+  - first:
+      213: 3996888086611232988
+    second: Thunder Spells_100
+  - first:
+      213: -3783575407188773468
+    second: Thunder Spells_101
+  - first:
+      213: -2571162442520162650
+    second: Thunder Spells_102
+  - first:
+      213: 7475429974178795139
+    second: Thunder Spells_103
+  - first:
+      213: -8987910387956273077
+    second: Thunder Spells_104
+  - first:
+      213: -9037840474703141295
+    second: Thunder Spells_105
+  - first:
+      213: 4117779799921848
+    second: Thunder Spells_106
+  - first:
+      213: -1054605500881693364
+    second: Thunder Spells_107
+  - first:
+      213: -1322270987421519255
+    second: Thunder Spells_108
+  - first:
+      213: 365048287239197187
+    second: Thunder Spells_109
+  - first:
+      213: -823608394804905846
+    second: Thunder Spells_110
+  - first:
+      213: -7570810464526298560
+    second: Thunder Spells_111
+  - first:
+      213: -3886165229515602760
+    second: Thunder Spells_112
+  - first:
+      213: -6534951153708788169
+    second: Thunder Spells_113
+  - first:
+      213: -1006768527826131580
+    second: Thunder Spells_114
+  - first:
+      213: -6929451124303575601
+    second: Thunder Spells_115
+  - first:
+      213: 8605569252636438778
+    second: Thunder Spells_116
+  - first:
+      213: -8098662415877361833
+    second: Thunder Spells_117
+  - first:
+      213: -9218032869219697570
+    second: Thunder Spells_118
+  - first:
+      213: 62229655420693300
+    second: Thunder Spells_119
+  - first:
+      213: 2607740685074062251
+    second: Thunder Spells_120
+  - first:
+      213: -521089922733218295
+    second: Thunder Spells_121
+  - first:
+      213: 7404534792225213083
+    second: Thunder Spells_122
+  - first:
+      213: -2239353150094654023
+    second: Thunder Spells_123
+  - first:
+      213: -7240037086722708762
+    second: Thunder Spells_124
+  - first:
+      213: 2054992419570961010
+    second: Thunder Spells_125
+  - first:
+      213: 4104240486177738803
+    second: Thunder Spells_126
+  - first:
+      213: 2501138941076663596
+    second: Thunder Spells_127
+  - first:
+      213: 3634035058575852177
+    second: Thunder Spells_128
+  - first:
+      213: -5565462623487373477
+    second: Thunder Spells_129
+  - first:
+      213: 6620941297839673686
+    second: Thunder Spells_130
+  - first:
+      213: 2884511916557098298
+    second: Thunder Spells_131
+  - first:
+      213: -6755403130834838650
+    second: Thunder Spells_132
+  - first:
+      213: -161574581212656343
+    second: Thunder Spells_133
+  - first:
+      213: -3517668647408233619
+    second: Thunder Spells_134
+  - first:
+      213: -5608114358681557990
+    second: Thunder Spells_135
+  - first:
+      213: 8964446254150314056
+    second: Thunder Spells_136
+  - first:
+      213: -8863314945861305175
+    second: Thunder Spells_137
+  - first:
+      213: 8319532197435149102
+    second: Thunder Spells_138
+  - first:
+      213: 3850714364324519735
+    second: Thunder Spells_139
+  - first:
+      213: -6750840012488389359
+    second: Thunder Spells_140
+  - first:
+      213: -5642748431910303961
+    second: Thunder Spells_141
+  - first:
+      213: 9166330643651465348
+    second: Thunder Spells_142
+  - first:
+      213: 2895957569184535632
+    second: Thunder Spells_143
+  - first:
+      213: 6172960598828718771
+    second: Thunder Spells_144
+  - first:
+      213: -8248974686786538919
+    second: Thunder Spells_145
+  - first:
+      213: -6277028459029111328
+    second: Thunder Spells_146
+  - first:
+      213: 5041867821232822905
+    second: Thunder Spells_147
+  - first:
+      213: -4044677567398329389
+    second: Thunder Spells_148
+  - first:
+      213: 1006079204931941123
+    second: Thunder Spells_149
+  - first:
+      213: -3156874773131931708
+    second: Thunder Spells_150
+  - first:
+      213: -6418729436543957631
+    second: Thunder Spells_151
+  - first:
+      213: 775523643387449843
+    second: Thunder Spells_152
+  - first:
+      213: 1726444293822506236
+    second: Thunder Spells_153
+  - first:
+      213: -1669866396059654700
+    second: Thunder Spells_154
+  - first:
+      213: 5265259357729332072
+    second: Thunder Spells_155
+  - first:
+      213: -4498714998890340381
+    second: Thunder Spells_156
+  - first:
+      213: 3122543357957490519
+    second: Thunder Spells_157
+  - first:
+      213: 1590428701290099143
+    second: Thunder Spells_158
+  - first:
+      213: -2808693610151692744
+    second: Thunder Spells_159
+  - first:
+      213: -2988561541142286180
+    second: Thunder Spells_160
+  - first:
+      213: -3043496305410827447
+    second: Thunder Spells_161
+  - first:
+      213: -933073342611293779
+    second: Thunder Spells_162
+  - first:
+      213: 4193576901437932500
+    second: Thunder Spells_163
+  - first:
+      213: 3186793202174408505
+    second: Thunder Spells_164
+  - first:
+      213: 1813999550388628169
+    second: Thunder Spells_165
+  - first:
+      213: 7911216908638732545
+    second: Thunder Spells_166
+  - first:
+      213: 1109827422301130607
+    second: Thunder Spells_167
+  - first:
+      213: 1410455376919286176
+    second: Thunder Spells_168
+  - first:
+      213: 544883678090603255
+    second: Thunder Spells_169
+  - first:
+      213: 5621819218083896745
+    second: Thunder Spells_170
+  - first:
+      213: -1235969280310129088
+    second: Thunder Spells_171
+  - first:
+      213: -8796027426878751143
+    second: Thunder Spells_172
+  - first:
+      213: 1858412887582681013
+    second: Thunder Spells_173
+  - first:
+      213: 1916484593749387827
+    second: Thunder Spells_174
+  - first:
+      213: -9154442384077562274
+    second: Thunder Spells_175
+  - first:
+      213: 5248981371239434502
+    second: Thunder Spells_176
+  - first:
+      213: -3399446858814994660
+    second: Thunder Spells_177
+  - first:
+      213: 9184328894725391925
+    second: Thunder Spells_178
+  - first:
+      213: 7008904448823144524
+    second: Thunder Spells_179
+  - first:
+      213: 6951874708084894451
+    second: Thunder Spells_180
+  - first:
+      213: -1678128977364890618
+    second: Thunder Spells_181
+  - first:
+      213: 7056320904310446646
+    second: Thunder Spells_182
+  - first:
+      213: 491714881816536278
+    second: Thunder Spells_183
+  - first:
+      213: 8048174605655830358
+    second: Thunder Spells_184
+  - first:
+      213: 4612596958398011061
+    second: Thunder Spells_185
+  - first:
+      213: 8707012009655759327
+    second: Thunder Spells_186
+  - first:
+      213: 6891463584915071120
+    second: Thunder Spells_187
+  - first:
+      213: -497785996739871947
+    second: Thunder Spells_188
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thunder Spells_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d6fa25f5853d130800000000000000
+      internalID: 3590310494376783238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b59151c83f229c00800000000000000
+      internalID: 905838395862914485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b70c5f20039a5370800000000000000
+      internalID: 8312117691269515187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6067cb3a4cfc390800000000000000
+      internalID: -7795796222434474331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6fda141ba2358c0800000000000000
+      internalID: -4011815902257482037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baf22618fd5955a0800000000000000
+      internalID: -6532086464419530057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7537cde72dd5dc0800000000000000
+      internalID: -3648528680793974842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dadb1df3c9e86b0800000000000000
+      internalID: -5292120714198012553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06a3e5f1709ac4b0800000000000000
+      internalID: -5419360382455929332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b8a661f89cfdfe0800000000000000
+      internalID: -1161988562444711147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1dd35d171cd03a0800000000000000
+      internalID: -6697484376176995934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5d6eff13a9efe90800000000000000
+      internalID: -6989980032095038003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee20cf3870afe6010800000000000000
+      internalID: 1184158662231065326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e6d65c2439a5ba0800000000000000
+      internalID: -6099400830330507686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39419eff018765740800000000000000
+      internalID: 5140428039098274963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6caaf977e647d810800000000000000
+      internalID: 1789977336900922479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4cc7715347cd420800000000000000
+      internalID: 2656125651617891522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_17
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cf55d507aa73500800000000000000
+      internalID: 375956493487701108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d1c3e28c2092fb0800000000000000
+      internalID: -4672200079627772636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02148b9c251a1a190800000000000000
+      internalID: -7952898090015899360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13b9424b50319830800000000000000
+      internalID: 4076092306259292954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930c28d2c1e4f4ee0800000000000000
+      internalID: -1274714286592966599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5913e09f5b1c8de90800000000000000
+      internalID: -7000632633435737707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206197f38dda17610800000000000000
+      internalID: 1617264885492160002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504a638965427cab0800000000000000
+      internalID: -4987978107950029819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544936926b1713e10800000000000000
+      internalID: 2175645122189038661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbfaf7e738093d40800000000000000
+      internalID: 5564487850801167319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8706f08c126385320800000000000000
+      internalID: 2546845107996287096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09bbf9036d9af430800000000000000
+      internalID: 3817536682844731661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_29
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3442eb302d96e6a0800000000000000
+      internalID: -6420271457000864709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4dec248eaf3930800000000000000
+      internalID: 4125207666407329422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b61e0b5057d0db00800000000000000
+      internalID: 851417069698029234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5df9dffaf32a68f0800000000000000
+      internalID: -546584843830821540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47a618efa082e830800000000000000
+      internalID: 4098980103862003534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_34
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d38715e182ff110800000000000000
+      internalID: 1296799328386956584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0574fd6f4ab4d4490800000000000000
+      internalID: -7760463411000948912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b68bf5c49066b5c0800000000000000
+      internalID: -4200063410383386951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ca2a4350eee7ba0800000000000000
+      internalID: -6089167940033008574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f17c93bc58e98f0800000000000000
+      internalID: -531840598088933588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_39
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d51748e84c66be0800000000000000
+      internalID: -1484282910785577687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_40
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1855a8d32260a360800000000000000
+      internalID: 7178845712126662684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0348fb5ed7fdf9eb0800000000000000
+      internalID: -4710800953387809744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d7116efe4623600800000000000000
+      internalID: 446530294582967605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80be3c53ecdc5fab0800000000000000
+      internalID: -4974843927811855608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_44
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aca34a7d5563c90800000000000000
+      internalID: -7190465370388772228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_45
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597ee20b932ea7810800000000000000
+      internalID: 1763970941465847701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5561ddbca822b70800000000000000
+      internalID: 8872806824065521100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcad930e0daeb59c0800000000000000
+      internalID: -3937295266369381683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_48
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af64703b70482890800000000000000
+      internalID: -7482659883037986910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunder Spells_49
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba68fc3f03f2252f0800000000000000
+      internalID: -985673481145317717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
