@@ -19,9 +19,9 @@ MonoBehaviour:
   MaxCooldown: 0
   ManaUsage: 0
   spellanim: {fileID: 0}
-  IsEquipped: 0
+  IsEquipped: 1
   IsBasicAttack: 0
   Combo: 
   ComboTimer: 0
   AnimationState: darkpowerofdarkness
-  IsTarget: 0
+  IsTarget: 1
