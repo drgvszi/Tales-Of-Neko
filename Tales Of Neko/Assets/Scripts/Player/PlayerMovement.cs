@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     private Vector2 _movement;
+    public bool canMove;
 
     // Update is called once per frame
     void Update()
@@ -27,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // movement handle
-        rb.MovePosition(rb.position + _movement * (moveSpeed * Time.fixedDeltaTime));
+        if (canMove)
+        {
+            rb.MovePosition(rb.position + _movement * (moveSpeed * Time.fixedDeltaTime));
+        }
     }
 }

@@ -7,8 +7,5 @@ namespace Tales_of_Neko
     {
         public Text Text;
         public T Class;
-        
-        
-
     }
 }

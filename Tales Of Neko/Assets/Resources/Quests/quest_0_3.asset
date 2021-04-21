@@ -25,4 +25,11 @@ MonoBehaviour:
       it. You won't get a second chance to flee.
   - Who: Ancient Spirit
     What: Now, go ahead and challenge the enemy in your vicinity.
-  Reward: 0
+  MoneyReward: 0
+  ExperienceReward: 0
+  QuestGoal:
+    Goals:
+    - Type: 2
+      What: MiniBoss
+      currentAmount: 0
+      requiredAmount: 1

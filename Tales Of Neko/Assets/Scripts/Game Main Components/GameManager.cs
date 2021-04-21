@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public List<Mob> enemies;
 
     public int enemyAttacked;
+    public QuestManager QuestManager;
     
     
     public void Awake()
@@ -18,13 +19,13 @@ public class GameManager : MonoBehaviour
             instance.player = Resources.Load<GameObject>("Player\\Player").GetComponent<Player>();
             GameObject[] enemiesGo = Resources.LoadAll<GameObject>("Enemies");
             instance.enemies=new List<Mob>(enemiesGo.Length);
+            QuestManager = new QuestManager();
             
             for (int i = 0; i < enemiesGo.Length; i++)
             {
                 instance.enemies.Add(enemiesGo[i].GetComponent<Mob>());
             }
             DontDestroyOnLoad (instance);
- 
         } else if (this != instance) {
             Destroy (this.gameObject);
  

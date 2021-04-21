@@ -26,4 +26,23 @@ MonoBehaviour:
     What: A - move left
   - Who: Ancient Spirit
     What: D - move right
-  Reward: 0
+  MoneyReward: 0
+  ExperienceReward: 0
+  QuestGoal:
+    Goals:
+    - Type: 2
+      What: W
+      currentAmount: 0
+      requiredAmount: 1
+    - Type: 2
+      What: S
+      currentAmount: 0
+      requiredAmount: 1
+    - Type: 2
+      What: A
+      currentAmount: 0
+      requiredAmount: 1
+    - Type: 2
+      What: D
+      currentAmount: 0
+      requiredAmount: 1

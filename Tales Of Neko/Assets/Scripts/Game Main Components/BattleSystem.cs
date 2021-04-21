@@ -37,6 +37,9 @@ public class BattleSystem: MonoBehaviour
 
     public Animator TargetedSpellPlayerAnimator;
     public Animator BlastSpellPlayerAnimator;
+    
+    public Animator TargetedSpellEnemyAnimator;
+    public Animator BlastSpellEnemyAnimator;
 
 	    [FormerlySerializedAs("SpellsButtons")] public List<GameObject> spellsButtons;
 
@@ -168,7 +171,9 @@ public class BattleSystem: MonoBehaviour
 	    }
 	    
 	    
-	    if (comboSuceded) {
+	    if (comboSuceded)
+	    {
+		    GameManager.Instance.QuestManager.Used(spell.Name);
 		    StartCoroutine(ManaAttack(spell));
 	    }
 	    else
@@ -299,6 +304,11 @@ public class BattleSystem: MonoBehaviour
 			    double enemyStrength = enemy.Stats.Strength;
 			    
 			    gameChat.text=enemy.name+" uses "+spell.Name;
+			    
+			    Animator animator = spell.IsTarget == true? TargetedSpellEnemyAnimator : BlastSpellEnemyAnimator; 
+			    animator.Play(spell.AnimationState);
+			    yield return new WaitForSeconds(1f);
+			    
 			    enemy.UseMana(spell.ManaUsage);
 			    player.TakeDamage(enemyWisdom * 0.8 + enemyStrength * 0.3 + spell.AttackDamage);
 			    
@@ -347,6 +357,7 @@ public class BattleSystem: MonoBehaviour
 	    yield return new WaitForSeconds(1f);
 	    if (battleState == BattleState.Win)
 	    {
+		    GameManager.Instance.QuestManager.EnemyKilled(enemy.name);
 		    gameChat.text = "You gained " + enemy.difficulty+" XP";
 		    player.AddExperience(enemy.difficulty);
 		    

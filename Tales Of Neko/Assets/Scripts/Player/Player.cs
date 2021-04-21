@@ -13,10 +13,12 @@ public class Player:Character
     
 
     public double Experience;
+    public double Money;
 
     [FormerlySerializedAs("canLevelUp")] public int levelStatsUp = 0;
 
     public List<Quest> Quests;
+    public QuestManager QuestManager;
     public static Player Instance
     {
         get

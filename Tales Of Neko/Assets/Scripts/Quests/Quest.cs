@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Tales_of_Neko
 {
@@ -12,7 +13,10 @@ namespace Tales_of_Neko
         public string Name;
         public string Summary;
         public List<Dialogue> Story;
-        public float Reward;
+        [FormerlySerializedAs("Reward")] public float MoneyReward;
+        public float ExperienceReward;
+        
+        public QuestGoal QuestGoal;
 
 
         public static void  SaveQuest(string where,Quest quest)
@@ -23,7 +27,8 @@ namespace Tales_of_Neko
                 writer.WriteStartElement("quest");
                 writer.WriteElementString("name",quest.Name);
                 writer.WriteElementString("summary",quest.Summary);
-                writer.WriteElementString("reward",quest.Reward.ToString());
+                writer.WriteElementString("money_reward",quest.MoneyReward.ToString());
+                writer.WriteElementString("experience_reward",quest.ExperienceReward.ToString());
                 writer.WriteStartElement("story");
                 foreach (Dialogue dialog in quest.Story)
                 {
@@ -44,14 +49,16 @@ namespace Tales_of_Neko
 
             XmlNode summaryNode = doc.DocumentElement.SelectSingleNode("summary");
             XmlNode nameNode = doc.DocumentElement.SelectSingleNode("name");
-            XmlNode rewardNode = doc.DocumentElement.SelectSingleNode("reward");
+            XmlNode moneyRewardNode = doc.DocumentElement.SelectSingleNode("money_reward");
+            XmlNode expRewardNode = doc.DocumentElement.SelectSingleNode("money_reward");
             XmlNode storyNode = doc.DocumentElement.SelectSingleNode("story");
 
             List<Dialogue> story = new List<Dialogue>();
 
             quest.Name = nameNode.InnerText;
             quest.Summary = summaryNode.InnerText;
-            quest.Reward = float.Parse(rewardNode.InnerText);
+            quest.MoneyReward = float.Parse(moneyRewardNode.InnerText);
+            quest.ExperienceReward = float.Parse(expRewardNode.InnerText);
 
             foreach (XmlNode node in storyNode.ChildNodes)
             {

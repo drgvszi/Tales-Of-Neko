@@ -47,10 +47,6 @@ public class Spell : ScriptableObject
 
         return false;
     }
-    public void PutOnCooldown()
-    {
-        CooldownManager.Instance.StartCoolDown(this);    
-    }
 
     public static string TypeToString(Spell spell)
     {

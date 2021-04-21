@@ -40,4 +40,11 @@ MonoBehaviour:
       the Golden Fish!
   - Who: Basted
     What: I will not fail my people...
-  Reward: 50
+  MoneyReward: 50
+  ExperienceReward: 0
+  QuestGoal:
+    Goals:
+    - Type: 0
+      What: MiniBoss
+      currentAmount: 0
+      requiredAmount: 1

@@ -43,6 +43,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -107,7 +108,9 @@ MonoBehaviour:
   MaxHealth: 200
   MaxMana: 100
   Spells:
-  - {fileID: 11400000, guid: 04d54bd5b6465d34c9aab11bb4a4aa1b, type: 2}
-  - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
+  - {fileID: 11400000, guid: 5e9150eb14df85f4aa95a044d170e89f, type: 2}
+  - {fileID: 11400000, guid: dc190cc8e48e51d4fae39b9f6393fa34, type: 2}
+  - {fileID: 11400000, guid: fffab2e2c8afb084fa06634d2f019136, type: 2}
+  - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
   Level: 1
   difficulty: 10

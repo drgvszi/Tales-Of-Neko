@@ -24,4 +24,11 @@ MonoBehaviour:
       a spell. The enemy will do the same on his turn.
   - Who: Ancient Spirit
     What: Now, try and give it a shot at defeating this enemy using your abilities.
-  Reward: 0
+  MoneyReward: 0
+  ExperienceReward: 0
+  QuestGoal:
+    Goals:
+    - Type: 3
+      What: FireBall
+      currentAmount: 0
+      requiredAmount: 1

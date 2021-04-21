@@ -14,11 +14,18 @@ public class NpcScript : MonoBehaviour
     public Button DeclineButton;
     
     public Text DialogueChat;
-    public Rigidbody2D PlayerRigidBody;
+    public Text EnterChat;
+    public PlayerMovement PlayerMovement;
+    
+    private List<KeyCode> keyCodes = new List<KeyCode>();
+    
     
     // Start is called before the first frame update
     void Start()
     {
+        keyCodes.Add(KeyCode.KeypadEnter);
+        keyCodes.Add(KeyCode.A);
+        keyCodes.Add(KeyCode.Space);
         
     }
 
@@ -40,7 +47,7 @@ public class NpcScript : MonoBehaviour
 
     public void Accept()
     {
-        PlayerRigidBody.constraints = RigidbodyConstraints2D.None;
+        PlayerMovement.canMove = true;
         GameManager.Instance.player.Quests.Add(Quest);
 
         DialogueMenu.SetActive(false);
@@ -48,22 +55,36 @@ public class NpcScript : MonoBehaviour
 
     public void Decline()
     {
-        PlayerRigidBody.constraints = RigidbodyConstraints2D.None;
+        PlayerMovement.canMove = true;
         DialogueMenu.SetActive(false);
     }
 
     public IEnumerator Story()
     {
-        PlayerRigidBody.constraints = RigidbodyConstraints2D.FreezeAll;
+        PlayerMovement.canMove = false;
+        EnterChat.text = "Space to continue...";
         foreach (Dialogue dialogue in Quest.Story)
         {
             DialogueChat.text = dialogue.Who + " : " + dialogue.What;
-            yield return new WaitForSeconds(2f);
+            
+            bool next = false;
+            while (!next)
+            {
+                if (Input.GetKeyDown(KeyCode.A) || 
+                    Input.GetKeyDown(KeyCode.Space) || 
+                    Input.GetKeyDown(KeyCode.KeypadEnter))
+                {
+                    Console.Out.WriteLine("AICIII");
+                    next = true;
+                }
+                yield return null;
+            }
+            Input.ResetInputAxes();
         }
-        
+
+        EnterChat.text = "";
         AcceptButton.gameObject.SetActive(true);
         DeclineButton.gameObject.SetActive(true);
-        
-        
+        yield return new WaitForSeconds(0f);
     }
 }
