@@ -24,3 +24,4 @@ MonoBehaviour:
   Combo: 110100001201000012010000
   ComboTimer: 2.5
   AnimationState: FireBall
+  IsTarget: 0

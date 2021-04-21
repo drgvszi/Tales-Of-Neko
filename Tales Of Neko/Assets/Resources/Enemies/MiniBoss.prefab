@@ -51,7 +51,7 @@ MonoBehaviour:
     Dexterity: 1
     Intelligence: 1
     Wisdom: 1
-  Health: 100
+  Health: 200
   Mana: 48
   MaxHealth: 200
   MaxMana: 50

@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1b56ff13788e8429a295eaa76683f0, type: 3}
-  m_Name: FullElemental
+  m_Name: Dark Power
   m_EditorClassIdentifier: 
-  Name: Full Elemental
-  Type: 4
-  AttackDamage: 40
+  Name: Dark Power
+  Type: 6
+  AttackDamage: 1
   CurrentCooldown: 0
   MaxCooldown: 0
-  ManaUsage: 50
+  ManaUsage: 0
   spellanim: {fileID: 0}
   IsEquipped: 0
   IsBasicAttack: 0
-  Combo: 11010000110100001201000012010000110100001101000013010000140100001401000012010000
-  ComboTimer: 3
-  AnimationState: FullElemental
-  IsTarget: 1
+  Combo: 
+  ComboTimer: 0
+  AnimationState: darkpowerofdarkness
+  IsTarget: 0

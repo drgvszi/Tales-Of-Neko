@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8973619679579535368, guid: 8083f87e4b6af3249af3a3c6bff8c46c, type: 3}
+  m_Sprite: {fileID: -8161844894033597125, guid: 8083f87e4b6af3249af3a3c6bff8c46c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
     Intelligence: 5
     Wisdom: 5
   Health: 100
-  Mana: 100
+  Mana: 50
   MaxHealth: 100
   MaxMana: 100
   Spells:
@@ -119,6 +119,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2f3a781f46bdcc0499f56199300f10a3, type: 2}
   - {fileID: 11400000, guid: fef77bbc59133974db615109a1348f34, type: 2}
   - {fileID: 11400000, guid: f6e32cc03cfd263499a9aaac793d771a, type: 2}
+  - {fileID: 11400000, guid: b52bf343f369b5243adeb0067ab83342, type: 2}
+  - {fileID: 11400000, guid: 631e64d21630fe54e8434cb6ac3ad5b6, type: 2}
+  - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
+  - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
   Level: 4
   Class: 0
   Inventory:
@@ -132,6 +136,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: dd9648735eb61a342bb814e120305f7f, type: 2}
     - {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     - {fileID: 11400000, guid: 510ca40a0ea5be44a9b0ad2254a6f510, type: 2}
-  Experience: 8
+  Experience: 12
   levelStatsUp: 0
   Quests: []
