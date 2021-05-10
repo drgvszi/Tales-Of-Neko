@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Map");
+        SceneManager.LoadScene("Story");
         
     }
 
