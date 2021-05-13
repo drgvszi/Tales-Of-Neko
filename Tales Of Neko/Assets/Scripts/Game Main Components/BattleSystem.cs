@@ -30,7 +30,6 @@ public class BattleSystem: MonoBehaviour
     public Mob enemy;
 
     public Text gameChat;
-    public Text panelText;
     public Image panelTimer;
 
     public GameObject GameOverGO;
@@ -114,79 +113,97 @@ public class BattleSystem: MonoBehaviour
 	    }
 	    else
 	    {
+
 		    StartCoroutine(UseSpell(spellSlot.Spell));
 	    }
     }
+    public Text spellCombo;
+    public Text spellMnD;
+	public bool ok;
+	public GameObject hide;
+	public GameObject unhide;
+	public Button okButton;
     IEnumerator UseSpell(Spell spell)
-    { 
-	    if (battleState != BattleState.PlayerTurn) yield break;
-	    bool comboSuceded=false;
+    { 	
+		spellMnD.text = "You'll use " + spell.Name + ", it will consume "+ spell.ManaUsage.ToString() +" mana "+ " and you'll deal " + spell.AttackDamage.ToString() +" damage.";
+        spellCombo.text = "Combo: ";
+        List<KeyCode> keyCodes = spell.Combo;
+        foreach (KeyCode kcode in keyCodes)
+        {
+            switch (kcode)
+            {
+                case KeyCode.UpArrow:
+                    spellCombo.text += "⇧ ";
+                    break;
+                case KeyCode.RightArrow:
+                    spellCombo.text += "⇨ ";
+                    break;
+                case KeyCode.LeftArrow:
+                    spellCombo.text += "⇦ ";
+                    break;
+                case KeyCode.DownArrow:
+                    spellCombo.text += "⇩ ";
+                    break;
+                default:
+                    spellCombo.text += kcode.ToString()+" ";
+                    break;
+        
+        	}
+		}
+		
 
-	    List<KeyCode> pressedKeys = new List<KeyCode>();
-
-	    panelText.text = "Press the combo keys!";
-	    yield return new WaitForSeconds(0.6f);
-	    panelTimer.enabled = !panelTimer.enabled;
-	    
-	    
-	    float startTime = Time.time;
-	    int i = 0;
-	    while (pressedKeys.Count < spell.Combo.Count && Time.time - startTime <= spell.ComboTimer) {
-		    yield return null;
-		    panelTimer.fillAmount = (Time.time - startTime) / spell.ComboTimer;
-		    foreach (KeyCode kcode in Enum.GetValues(typeof(KeyCode)))
-		    {
-			    if (Input.GetKey(kcode))
-			    {
-				    switch (kcode)
-				    {
-					    case KeyCode.UpArrow:
-						    panelText.text = "⇧";
-						    break;
-					    case KeyCode.RightArrow:
-						    panelText.text = "⇨";
-						    break;
-					    case KeyCode.LeftArrow:
-						    panelText.text = "⇦";
-						    break;
-					    case KeyCode.DownArrow:
-						    panelText.text = "⇩";
-						    break;
-					    default:
-						    panelText.text = kcode.ToString();
-						    break;
-
-				    }
-				    
-				    pressedKeys.Add(kcode);
-					Input.ResetInputAxes();
-			    }
-		    }
-	    }
-
-	    panelText.text = "";
-	    panelTimer.enabled = !panelTimer.enabled;
-	    if (pressedKeys.SequenceEqual(spell.Combo)) {
-		    comboSuceded = true;
-	    }
-	    
-	    
-	    if (comboSuceded)
-	    {
-		    GameManager.Instance.QuestManager.Used(spell.Name);
-		    StartCoroutine(ManaAttack(spell));
-	    }
-	    else
-	    {
-		    gameChat.text = spell.Name+" failed!";
-	    
-		    yield return new WaitForSeconds(1f);
-		    
-		    battleState= BattleState.EnemyTurn;
-			    StartCoroutine(EnemyTurn(false));
-	    }
-	    
-
+		var waitForButton = new WaitForUIButtons(okButton);
+		yield return waitForButton.Reset();
+		if (waitForButton.PressedButton == okButton)
+		{
+			
+			hide.SetActive(false);
+			unhide.SetActive(true);
+			if (battleState != BattleState.PlayerTurn) yield break;
+			bool comboSuceded=false;
+			List<KeyCode> pressedKeys = new List<KeyCode>();
+			yield return new WaitForSeconds(0.6f);
+			panelTimer.enabled = !panelTimer.enabled;
+			float startTime = Time.time;
+			while (pressedKeys.Count < spell.Combo.Count && Time.time - startTime <= spell.ComboTimer) {
+				yield return null;
+				panelTimer.fillAmount = (Time.time - startTime) / spell.ComboTimer;
+				foreach (KeyCode kcode in Enum.GetValues(typeof(KeyCode)))
+				{
+					if (Input.GetKey(kcode))
+					{
+						pressedKeys.Add(kcode);
+						Input.ResetInputAxes();
+					}
+				}
+			}
+			panelTimer.enabled = !panelTimer.enabled;
+			if (pressedKeys.SequenceEqual(spell.Combo)) {
+				comboSuceded = true;
+			}
+			
+			spellCombo.text = "";
+			if (comboSuceded)
+			{
+				GameManager.Instance.QuestManager.Used(spell.Name);
+				StartCoroutine(ManaAttack(spell));
+				
+			}
+			else
+			{
+				gameChat.text = spell.Name+" failed!";
+			
+				yield return new WaitForSeconds(1f);
+				
+				battleState= BattleState.EnemyTurn;
+					StartCoroutine(EnemyTurn(false));
+			}
+		}  
+		else
+		{
+			hide.SetActive(true);
+			unhide.SetActive(false);
+		}
     }
     public void UseBasicAttack(double addedAttack)
     {
