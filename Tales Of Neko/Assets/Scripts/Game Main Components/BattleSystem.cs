@@ -151,7 +151,10 @@ public class BattleSystem: MonoBehaviour
         	}
 		}
 		
-
+		
+		
+		hide.SetActive(true);
+		unhide.SetActive(false);
 		var waitForButton = new WaitForUIButtons(okButton);
 		yield return waitForButton.Reset();
 		if (waitForButton.PressedButton == okButton)
@@ -159,12 +162,13 @@ public class BattleSystem: MonoBehaviour
 			
 			hide.SetActive(false);
 			unhide.SetActive(true);
+			
 			if (battleState != BattleState.PlayerTurn) yield break;
 			bool comboSuceded=false;
 			List<KeyCode> pressedKeys = new List<KeyCode>();
 			yield return new WaitForSeconds(0.6f);
-			panelTimer.enabled = !panelTimer.enabled;
 			float startTime = Time.time;
+			panelTimer.enabled = !panelTimer.enabled;
 			while (pressedKeys.Count < spell.Combo.Count && Time.time - startTime <= spell.ComboTimer) {
 				yield return null;
 				panelTimer.fillAmount = (Time.time - startTime) / spell.ComboTimer;
@@ -178,6 +182,7 @@ public class BattleSystem: MonoBehaviour
 				}
 			}
 			panelTimer.enabled = !panelTimer.enabled;
+
 			if (pressedKeys.SequenceEqual(spell.Combo)) {
 				comboSuceded = true;
 			}
@@ -196,14 +201,11 @@ public class BattleSystem: MonoBehaviour
 				yield return new WaitForSeconds(1f);
 				
 				battleState= BattleState.EnemyTurn;
-					StartCoroutine(EnemyTurn(false));
+				StartCoroutine(EnemyTurn(false));
 			}
+			
 		}  
-		else
-		{
-			hide.SetActive(true);
-			unhide.SetActive(false);
-		}
+		
     }
     public void UseBasicAttack(double addedAttack)
     {

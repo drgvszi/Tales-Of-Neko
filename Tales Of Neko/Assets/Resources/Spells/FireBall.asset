@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FireBall
   Type: 0
-  AttackDamage: 10
+  AttackDamage: 5
   CurrentCooldown: 0
   MaxCooldown: 10
   ManaUsage: 2
