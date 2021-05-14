@@ -119,13 +119,13 @@ public class BattleSystem: MonoBehaviour
     }
     public Text spellCombo;
     public Text spellMnD;
-	public bool ok;
 	public GameObject hide;
-	public GameObject unhide;
+	public GameObject hide1;
+	public Text comboDone;
 	public Button okButton;
     IEnumerator UseSpell(Spell spell)
     { 	
-		spellMnD.text = "You'll use " + spell.Name + ", it will consume "+ spell.ManaUsage.ToString() +" mana "+ " and you'll deal " + spell.AttackDamage.ToString() +" damage.";
+		spellMnD.text = spell.Name + ", \nMana: "+ spell.ManaUsage.ToString() +", \nDamage: " + spell.AttackDamage.ToString();
         spellCombo.text = "Combo: ";
         List<KeyCode> keyCodes = spell.Combo;
         foreach (KeyCode kcode in keyCodes)
@@ -153,18 +153,12 @@ public class BattleSystem: MonoBehaviour
 		
 		
 		
-		hide.SetActive(true);
-		unhide.SetActive(false);
+		if (battleState != BattleState.PlayerTurn) yield break;
+		bool comboSuceded=false;
 		var waitForButton = new WaitForUIButtons(okButton);
 		yield return waitForButton.Reset();
 		if (waitForButton.PressedButton == okButton)
 		{
-			
-			hide.SetActive(false);
-			unhide.SetActive(true);
-			
-			if (battleState != BattleState.PlayerTurn) yield break;
-			bool comboSuceded=false;
 			List<KeyCode> pressedKeys = new List<KeyCode>();
 			yield return new WaitForSeconds(0.6f);
 			float startTime = Time.time;
@@ -177,6 +171,24 @@ public class BattleSystem: MonoBehaviour
 					if (Input.GetKey(kcode))
 					{
 						pressedKeys.Add(kcode);
+						switch (kcode)
+						{
+							case KeyCode.UpArrow:
+								comboDone.text += "⇧ ";
+								break;
+							case KeyCode.RightArrow:
+								comboDone.text += "⇨ ";
+								break;
+							case KeyCode.LeftArrow:
+								comboDone.text += "⇦ ";
+								break;
+							case KeyCode.DownArrow:
+								comboDone.text += "⇩ ";
+								break;
+							default:
+								comboDone.text += kcode.ToString()+" ";
+								break;
+						}
 						Input.ResetInputAxes();
 					}
 				}
@@ -186,8 +198,14 @@ public class BattleSystem: MonoBehaviour
 			if (pressedKeys.SequenceEqual(spell.Combo)) {
 				comboSuceded = true;
 			}
-			
+
+
+			comboDone.text="";
 			spellCombo.text = "";
+			spellMnD.text = "";
+			hide.SetActive(false);
+			hide1.SetActive(false);
+
 			if (comboSuceded)
 			{
 				GameManager.Instance.QuestManager.Used(spell.Name);
