@@ -123,9 +123,13 @@ public class BattleSystem: MonoBehaviour
 	public GameObject hide1;
 	public Text comboDone;
 	public Button okButton;
+	public Button backButton;
     IEnumerator UseSpell(Spell spell)
     { 	
-		spellMnD.text = spell.Name + ", \nMana: "+ spell.ManaUsage.ToString() +", \nDamage: " + spell.AttackDamage.ToString();
+		double playerWisdom = player.GetComplessiveStats().Wisdom ;
+		double playerStrength = player.GetComplessiveStats().Strength;
+		double damage =  playerWisdom * 0.8 + playerStrength * 0.3 + spell.AttackDamage;
+		spellMnD.text = spell.Name + ", \nMana: "+ spell.ManaUsage.ToString() +", \nDamage: " + damage.ToString();
         spellCombo.text = "Combo: ";
         List<KeyCode> keyCodes = spell.Combo;
         foreach (KeyCode kcode in keyCodes)
@@ -155,7 +159,7 @@ public class BattleSystem: MonoBehaviour
 		
 		if (battleState != BattleState.PlayerTurn) yield break;
 		bool comboSuceded=false;
-		var waitForButton = new WaitForUIButtons(okButton);
+		var waitForButton = new WaitForUIButtons(okButton, backButton);
 		yield return waitForButton.Reset();
 		if (waitForButton.PressedButton == okButton)
 		{
@@ -223,6 +227,10 @@ public class BattleSystem: MonoBehaviour
 			}
 			
 		}  
+		else
+		{
+			battleState= BattleState.PlayerTurn;
+		}
 		
     }
     public void UseBasicAttack(double addedAttack)
