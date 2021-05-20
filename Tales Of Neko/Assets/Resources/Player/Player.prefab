@@ -124,7 +124,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 631e64d21630fe54e8434cb6ac3ad5b6, type: 2}
   - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
   - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
-  Level: 5
+  Level: 6
   Class: 0
   Inventory:
     EquippedItems:
@@ -137,7 +137,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: dd9648735eb61a342bb814e120305f7f, type: 2}
     - {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     - {fileID: 11400000, guid: 510ca40a0ea5be44a9b0ad2254a6f510, type: 2}
-  Experience: 12
+  Experience: 4
   Money: 0
-  levelStatsUp: 1
+  levelStatsUp: 2
   Quests: []

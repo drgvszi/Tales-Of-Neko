@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     // Start is called before the first frame update
-    private string Sname = "Map";
+    public string Sname;
     // Update is called once per frame
     public void ChangerScene()
     {
