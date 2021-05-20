@@ -108,9 +108,9 @@ MonoBehaviour:
   MaxHealth: 200
   MaxMana: 100
   Spells:
-  - {fileID: 11400000, guid: 5e9150eb14df85f4aa95a044d170e89f, type: 2}
-  - {fileID: 11400000, guid: dc190cc8e48e51d4fae39b9f6393fa34, type: 2}
+  - {fileID: 11400000, guid: b52bf343f369b5243adeb0067ab83342, type: 2}
   - {fileID: 11400000, guid: fffab2e2c8afb084fa06634d2f019136, type: 2}
   - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
+  - {fileID: 11400000, guid: 8c95919d9f241144e86f71040a8220f4, type: 2}
   Level: 1
   difficulty: 10

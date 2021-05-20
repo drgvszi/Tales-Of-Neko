@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Phoenix Attack
   Type: 0
-  AttackDamage: 1
+  AttackDamage: 3
   CurrentCooldown: 0
   MaxCooldown: 0
-  ManaUsage: 0
+  ManaUsage: 1
   spellanim: {fileID: 0}
   IsEquipped: 0
   IsBasicAttack: 0

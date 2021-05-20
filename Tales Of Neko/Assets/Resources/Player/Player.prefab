@@ -104,7 +104,7 @@ MonoBehaviour:
     Intelligence: 5
     Wisdom: 5
   Health: 100
-  Mana: 64
+  Mana: 100
   MaxHealth: 100
   MaxMana: 100
   Spells:
@@ -124,8 +124,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 631e64d21630fe54e8434cb6ac3ad5b6, type: 2}
   - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
   - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
-  Level: 6
-  Class: 0
+  Level: 1
+  Class: 2
   Inventory:
     EquippedItems:
       Helmet: {fileID: 11400000, guid: a51b134c0bc9a944e8889d93158776fe, type: 2}
@@ -137,7 +137,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: dd9648735eb61a342bb814e120305f7f, type: 2}
     - {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     - {fileID: 11400000, guid: 510ca40a0ea5be44a9b0ad2254a6f510, type: 2}
-  Experience: 4
+  Experience: 0
   Money: 0
-  levelStatsUp: 2
+  levelStatsUp: 0
   Quests: []

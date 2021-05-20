@@ -19,7 +19,7 @@ MonoBehaviour:
   MaxCooldown: 0
   ManaUsage: 0
   spellanim: {fileID: 0}
-  IsEquipped: 1
+  IsEquipped: 0
   IsBasicAttack: 0
   Combo: 1301000013010000
   ComboTimer: 2

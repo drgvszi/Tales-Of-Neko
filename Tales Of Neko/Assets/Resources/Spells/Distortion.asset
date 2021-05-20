@@ -17,9 +17,9 @@ MonoBehaviour:
   AttackDamage: 15
   CurrentCooldown: 0
   MaxCooldown: 0
-  ManaUsage: 0
+  ManaUsage: 25
   spellanim: {fileID: 0}
-  IsEquipped: 0
+  IsEquipped: 1
   IsBasicAttack: 0
   Combo: 110100001101000012010000130100001301000014010000
   ComboTimer: 5

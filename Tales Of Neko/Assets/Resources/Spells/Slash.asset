@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Slash
   Type: 7
-  AttackDamage: 3
+  AttackDamage: 1
   CurrentCooldown: 0
   MaxCooldown: 0
   ManaUsage: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   AttackDamage: 1
   CurrentCooldown: 0
   MaxCooldown: 0
-  ManaUsage: 0
+  ManaUsage: 5
   spellanim: {fileID: 0}
   IsEquipped: 0
   IsBasicAttack: 0

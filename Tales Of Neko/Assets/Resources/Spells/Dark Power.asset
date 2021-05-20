@@ -17,11 +17,11 @@ MonoBehaviour:
   AttackDamage: 1
   CurrentCooldown: 0
   MaxCooldown: 0
-  ManaUsage: 0
+  ManaUsage: 5
   spellanim: {fileID: 0}
   IsEquipped: 1
   IsBasicAttack: 0
-  Combo: 20000000
-  ComboTimer: 0
+  Combo: 1101000013010000
+  ComboTimer: 3
   AnimationState: darkpowerofdarkness
   IsTarget: 1

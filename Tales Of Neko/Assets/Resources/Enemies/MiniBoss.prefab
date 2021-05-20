@@ -52,13 +52,14 @@ MonoBehaviour:
     Intelligence: 1
     Wisdom: 1
   Health: 200
-  Mana: 44
+  Mana: 50
   MaxHealth: 200
   MaxMana: 50
   Spells:
-  - {fileID: 11400000, guid: 04d54bd5b6465d34c9aab11bb4a4aa1b, type: 2}
   - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
-  - {fileID: 11400000, guid: fef77bbc59133974db615109a1348f34, type: 2}
+  - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
+  - {fileID: 11400000, guid: 5e9150eb14df85f4aa95a044d170e89f, type: 2}
+  - {fileID: 11400000, guid: 2f3a781f46bdcc0499f56199300f10a3, type: 2}
   Level: 1
   difficulty: 4
 --- !u!212 &-8343618385977506624
