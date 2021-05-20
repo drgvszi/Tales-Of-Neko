@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using SaveLoadSystem;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,6 +26,7 @@ public class GameOver : MonoBehaviour
 
     public void Load()
     {
+        SaveSystem.Instance.Load();
         SceneManager.LoadScene("Map");
     }
 }

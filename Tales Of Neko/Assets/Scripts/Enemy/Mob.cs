@@ -1,4 +1,5 @@
-﻿using Tales_of_Neko;
+﻿using System;
+using Tales_of_Neko;
 using UnityEngine;
 using UnityEngine.Serialization;
 

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Tales_of_Neko;
 
 [CreateAssetMenu(fileName ="New Item",menuName = "Item")]

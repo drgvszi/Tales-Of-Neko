@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Tales_of_Neko;
 using UnityEngine;
 
+[Serializable]
 [CreateAssetMenu(fileName ="New Spell",menuName = "Spell")]
 public class Spell : ScriptableObject
 {
@@ -25,6 +27,7 @@ public class Spell : ScriptableObject
 
     public Spell(string name,ElementType type,double attackDamage,double maxCooldown,int manaUsage)
     {
+        
         Name = name;
         Type = type;
         AttackDamage = attackDamage;

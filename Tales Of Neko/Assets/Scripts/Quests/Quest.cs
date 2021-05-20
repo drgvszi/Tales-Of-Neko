@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 
 namespace Tales_of_Neko
 {
+    [Serializable]
     [CreateAssetMenu(fileName ="New Quest",menuName = "Quest")]
     public class Quest:ScriptableObject
     {

@@ -30,6 +30,7 @@ public class TriggerIt : MonoBehaviour
                    GameManager.Instance.enemyAttacked = i;
                }
            }
+           
            SceneManager.LoadScene("BattleGround");
            
        }

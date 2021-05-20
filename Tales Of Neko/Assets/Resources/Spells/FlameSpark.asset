@@ -21,7 +21,7 @@ MonoBehaviour:
   spellanim: {fileID: 0}
   IsEquipped: 0
   IsBasicAttack: 0
-  Combo: 
+  Combo: 00010000
   ComboTimer: 3
   AnimationState: FlameSpark
   IsTarget: 1

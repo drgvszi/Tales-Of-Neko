@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using SaveLoadSystem;
 using Tales_of_Neko;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -7,7 +8,6 @@ using Random = System.Random;
 
 public class Player:Character
 {
-    public static Player instance;
     public CharacterClass Class;
     public Inventory Inventory;
     
@@ -19,26 +19,15 @@ public class Player:Character
 
     public List<Quest> Quests;
     public QuestManager QuestManager;
-    public static Player Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new Player("Me");
-            }
-
-            return instance;
-        }
-    }
-    private Player(string name) : base(name)
+    
+    public Player(string name) : base(name)
     {
         Experience = 0;
         Inventory = new Inventory();
         Spells= new List<Spell>();
         Quests = new List<Quest>();
     }
-    private Player(string name, CharacterClass characterClass, float health, float mana):base(name)
+    public Player(string name, CharacterClass characterClass, float health, float mana):base(name)
     {
         Class = characterClass;
         Health = health;
@@ -50,7 +39,7 @@ public class Player:Character
         Experience = 0;
 
     }
-    private Player(string name, CharacterClass characterClass, float health, float mana,Stats stats):base(name)
+    public Player(string name, CharacterClass characterClass, float health, float mana,Stats stats):base(name)
     {
         Class = characterClass;
         Health = health;
@@ -121,4 +110,5 @@ public class Player:Character
     {
         return base.ToString();
     }
+    
 }

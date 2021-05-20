@@ -18,7 +18,7 @@ public class EnemyHud:MonoBehaviour
 
         Enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
 
-        nameTextBox.text = Enemy.name;
+        nameTextBox.text = Enemy.Name;
         levelTextBox.text =  "  Lv. " + Enemy.Level;
             
         HealthSlider.maxValue = (float) Enemy.MaxHealth;

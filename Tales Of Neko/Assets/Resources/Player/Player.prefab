@@ -104,7 +104,7 @@ MonoBehaviour:
     Intelligence: 5
     Wisdom: 5
   Health: 100
-  Mana: 98
+  Mana: 100
   MaxHealth: 100
   MaxMana: 100
   Spells:
@@ -137,7 +137,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: dd9648735eb61a342bb814e120305f7f, type: 2}
     - {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     - {fileID: 11400000, guid: 510ca40a0ea5be44a9b0ad2254a6f510, type: 2}
-  Experience: 8
+  Experience: 12
   Money: 0
   levelStatsUp: 1
   Quests: []

@@ -6,7 +6,7 @@ using UnityEngine;
 public class QuestManager
 {
     // Update is called once per frame
-
+    
     public bool EnemyKilled(string enemy)
     {
         foreach (Quest quest in GameManager.Instance.player.Quests)

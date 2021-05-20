@@ -18,12 +18,14 @@ public class PlayerHud:MonoBehaviour
     public Player Player;
     public void Start()
     {
-
+        //Debug.Log(GameManager.Instance.enemies);
+        //Debug.Log(GameManager.Instance.player);
+        
         Player = GameManager.Instance.player;
 
         if (nameTextBox!=null)
         {
-            nameTextBox.text = Player.name;
+            nameTextBox.text = Player.Name;
             levelTextBox.text = "  Lv. " + Player.Level;
         }
 

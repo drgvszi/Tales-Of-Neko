@@ -19,6 +19,7 @@
             <e p="DONTDESTROYSOUND.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="NpcScript.cs" t="Include" />
+            <e p="SceneHandler.cs" t="Include" />
             <e p="Teleport.cs" t="Include" />
           </e>
           <e p="Hud" t="Include">
@@ -34,7 +35,6 @@
           <e p="Menus" t="Include">
             <e p="CharacterSpells.cs" t="Include" />
             <e p="CharacterStats.cs" t="Include" />
-            <e p="Dialogue.cs" t="Include" />
             <e p="GameOver.cs" t="Include" />
             <e p="InventoryItemDetails.cs" t="Include" />
             <e p="InventoryMenu.cs" t="Include" />
@@ -55,9 +55,22 @@
             <e p="Stats.cs" t="Include" />
           </e>
           <e p="Quests" t="Include">
+            <e p="Dialogue.cs" t="Include" />
             <e p="Quest.cs" t="Include" />
             <e p="QuestGoal.cs" t="Include" />
             <e p="QuestManager.cs" t="Include" />
+          </e>
+          <e p="SaveLoadSystem" t="Include">
+            <e p="EnemySave.cs" t="Include" />
+            <e p="EquippedItemsSave.cs" t="Include" />
+            <e p="GameManagerData.cs" t="Include" />
+            <e p="GameManagerSave.cs" t="Include" />
+            <e p="InventorySave.cs" t="Include" />
+            <e p="ItemSave.cs" t="Include" />
+            <e p="PlayerSave.cs" t="Include" />
+            <e p="QuestSave.cs" t="Include" />
+            <e p="SaveSystem.cs" t="Include" />
+            <e p="SpellSave.cs" t="Include" />
           </e>
           <e p="Spells" t="Include">
             <e p="ElementType.cs" t="Include" />

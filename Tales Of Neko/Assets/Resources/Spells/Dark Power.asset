@@ -21,7 +21,7 @@ MonoBehaviour:
   spellanim: {fileID: 0}
   IsEquipped: 1
   IsBasicAttack: 0
-  Combo: 
+  Combo: 20000000
   ComboTimer: 0
   AnimationState: darkpowerofdarkness
   IsTarget: 1

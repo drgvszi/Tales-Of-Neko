@@ -66,7 +66,9 @@ public class BattleSystem: MonoBehaviour
     }
     IEnumerator SetupBattle()
     {
+	    
 	    player = GameManager.Instance.player;
+	    Debug.Log(player);
 	    enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
 
 	    playerGameObject = Resources.Load<GameObject>( "Player\\Player");
