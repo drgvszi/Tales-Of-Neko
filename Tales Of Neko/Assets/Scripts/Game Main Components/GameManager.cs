@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using SaveLoadSystem;
+using Tales_of_Neko;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 _instance.player = Resources.Load<GameObject>("Player\\Player").GetComponent<Player>();
+                player.Class = getClass();
                 GameObject[] enemiesGo = Resources.LoadAll<GameObject>("Enemies");
                 _instance.enemies=new List<Mob>(enemiesGo.Length);
                 QuestManager = new QuestManager();
@@ -74,6 +76,21 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+
+    public CharacterClass getClass()
+    {
+        if (PlayerPrefs.GetString("class") == "mage")
+        {
+            return CharacterClass.Mage;
+        }
+        else if (PlayerPrefs.GetString("class") == "warrior")
+        {
+            return CharacterClass.Warrior;
+        }
+
+        return CharacterClass.Rogue;
+    }
+    
 
     public void Load()
     {

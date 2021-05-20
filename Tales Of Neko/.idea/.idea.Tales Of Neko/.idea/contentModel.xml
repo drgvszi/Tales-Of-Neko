@@ -20,11 +20,13 @@
             <e p="GameManager.cs" t="Include" />
             <e p="NpcScript.cs" t="Include" />
             <e p="SceneHandler.cs" t="Include" />
+            <e p="Story.cs" t="Include" />
             <e p="Teleport.cs" t="Include" />
           </e>
           <e p="Hud" t="Include">
             <e p="EnemyHud.cs" t="Include" />
             <e p="PlayerHud.cs" t="Include" />
+            <e p="WaitForUIButtons.cs" t="Include" />
           </e>
           <e p="Items" t="Include">
             <e p="EquippedItems.cs" t="Include" />
@@ -52,6 +54,7 @@
             <e p="Player.cs" t="Include" />
             <e p="PlayerMov.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="SelectClass.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
           </e>
           <e p="Quests" t="Include">

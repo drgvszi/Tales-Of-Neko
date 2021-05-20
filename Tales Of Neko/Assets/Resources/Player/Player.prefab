@@ -104,7 +104,7 @@ MonoBehaviour:
     Intelligence: 5
     Wisdom: 5
   Health: 100
-  Mana: 100
+  Mana: 64
   MaxHealth: 100
   MaxMana: 100
   Spells:

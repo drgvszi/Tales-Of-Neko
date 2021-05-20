@@ -39,6 +39,14 @@ public class BattleSystem: MonoBehaviour
     
     public Animator TargetedSpellEnemyAnimator;
     public Animator BlastSpellEnemyAnimator;
+    
+    public Text spellCombo;
+    public Text spellMnD;
+    public GameObject hide;
+    public GameObject hide1;
+    public Text comboDone;
+    public Button okButton;
+    public Button backButton;
 
 	    [FormerlySerializedAs("SpellsButtons")] public List<GameObject> spellsButtons;
 
@@ -119,15 +127,11 @@ public class BattleSystem: MonoBehaviour
 		    StartCoroutine(UseSpell(spellSlot.Spell));
 	    }
     }
-    public Text spellCombo;
-    public Text spellMnD;
-	public GameObject hide;
-	public GameObject hide1;
-	public Text comboDone;
-	public Button okButton;
-	public Button backButton;
+   
     IEnumerator UseSpell(Spell spell)
     { 	
+	    if (battleState != BattleState.PlayerTurn) yield break;
+	    
 		double playerWisdom = player.GetComplessiveStats().Wisdom ;
 		double playerStrength = player.GetComplessiveStats().Strength;
 		double damage =  playerWisdom * 0.8 + playerStrength * 0.3 + spell.AttackDamage;
@@ -157,9 +161,7 @@ public class BattleSystem: MonoBehaviour
         	}
 		}
 		
-		
-		
-		if (battleState != BattleState.PlayerTurn) yield break;
+        
 		bool comboSuceded=false;
 		var waitForButton = new WaitForUIButtons(okButton, backButton);
 		yield return waitForButton.Reset();
@@ -216,6 +218,11 @@ public class BattleSystem: MonoBehaviour
 			{
 				GameManager.Instance.QuestManager.Used(spell.Name);
 				StartCoroutine(ManaAttack(spell));
+				int spellNumber = player.GetEquippedSpells().Count;
+				for (int i = 0; i < spellNumber; i++)
+				{
+					spellsButtons[i].GetComponent<Button>().interactable = false;
+				}
 				
 			}
 			else
@@ -231,7 +238,7 @@ public class BattleSystem: MonoBehaviour
 		}  
 		else
 		{
-			battleState= BattleState.PlayerTurn;
+			//battleState= BattleState.PlayerTurn;
 		}
 		
     }
@@ -322,6 +329,7 @@ public class BattleSystem: MonoBehaviour
 	    {
 		    oldColor = spellsButtons[i].GetComponent<Image>().color;
 		    spellsButtons[i].GetComponent<Image>().color=new Color(0.6f,0.6f,0.6f);
+		    spellsButtons[i].GetComponent<Button>().interactable = false;
 	    }
 	    
 	    if(willWait)
@@ -371,6 +379,7 @@ public class BattleSystem: MonoBehaviour
 	    for (int i = 0; i < spellNumber; i++)
 	    {
 		    spellsButtons[i].GetComponent<Image>().color=oldColor;
+		    spellsButtons[i].GetComponent<Button>().interactable = true;
 	    }
 	    
 	    if(isDead)
