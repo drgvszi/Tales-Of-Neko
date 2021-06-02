@@ -138,6 +138,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7ab6ff1f114cbef468ec54571f272c7b, type: 2}
     - {fileID: 11400000, guid: 510ca40a0ea5be44a9b0ad2254a6f510, type: 2}
   Experience: 0
-  Money: 0
+  Money: 100
   levelStatsUp: 0
   Quests: []

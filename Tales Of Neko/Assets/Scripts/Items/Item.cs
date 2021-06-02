@@ -9,6 +9,7 @@ public class Item:ScriptableObject
     public string Name;
     public ItemType ItemType;
     public string Description;
+    public int Price;
         
     [Header("Item stats")]
     public Stats Stats;

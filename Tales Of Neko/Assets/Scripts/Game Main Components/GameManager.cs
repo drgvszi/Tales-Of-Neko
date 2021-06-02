@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
 
     public int enemyAttacked;
     public QuestManager QuestManager;
-    
-    
+    public List<Item> shop;
+
+
     public void Awake()
     {
         if (_instance == null) {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 _instance.player = Resources.Load<GameObject>("Player\\Player").GetComponent<Player>();
+                _instance.shop = new List<Item>(Resources.Load<GameObject>("Shop\\Shop").GetComponent<ShopItems>().Items);
                 player.Class = getClass();
                 GameObject[] enemiesGo = Resources.LoadAll<GameObject>("Enemies");
                 _instance.enemies=new List<Mob>(enemiesGo.Length);
