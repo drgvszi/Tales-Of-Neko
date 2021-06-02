@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 494e799478fdd9247a04fce770dbaf6f
+guid: c1b1f186813a69545a0a70c5d9c2b0ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7644469610458202456
-    second: pipo-nekonin008_0
+      213: -2653828253377839000
+    second: NekoRogue_0
   - first:
-      213: 8109961452125243670
-    second: pipo-nekonin008_1
+      213: -4511006836530886290
+    second: NekoRogue_1
   - first:
-      213: 419823260233269567
-    second: pipo-nekonin008_2
+      213: 7066805796763338506
+    second: NekoRogue_2
   - first:
-      213: -4762711840788526683
-    second: pipo-nekonin008_3
+      213: 2324915346516600480
+    second: NekoRogue_3
   - first:
-      213: 3749518448205642304
-    second: pipo-nekonin008_4
+      213: -6314273474681795922
+    second: NekoRogue_4
   - first:
-      213: -8361537260978885967
-    second: pipo-nekonin008_5
+      213: -8089174795978521366
+    second: NekoRogue_5
   - first:
-      213: 4770996203504660562
-    second: pipo-nekonin008_6
+      213: -5285630509775024954
+    second: NekoRogue_6
   - first:
-      213: 7894223435683482238
-    second: pipo-nekonin008_7
+      213: -1379891821710276443
+    second: NekoRogue_7
   - first:
-      213: 6369368065003872087
-    second: pipo-nekonin008_8
+      213: 3777734632427313538
+    second: NekoRogue_8
   - first:
-      213: 2242216370018374663
-    second: pipo-nekonin008_9
+      213: -2252388713225634946
+    second: NekoRogue_9
   - first:
-      213: -3729018229128212952
-    second: pipo-nekonin008_10
+      213: 3480758799546024587
+    second: NekoRogue_10
   - first:
-      213: -1063261587599735307
-    second: pipo-nekonin008_11
+      213: -777849906230337417
+    second: NekoRogue_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,253 +127,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pipo-nekonin008_0
+      name: NekoRogue_0
       rect:
         serializedVersion: 2
         x: 0
         y: 96
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aebe54346369e590800000000000000
-      internalID: -7644469610458202456
+      spriteID: 860c48e9345bb2bd0800000000000000
+      internalID: -2653828253377839000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_1
+      name: NekoRogue_1
       rect:
         serializedVersion: 2
         x: 32
         y: 96
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6194908e8fe5c8070800000000000000
-      internalID: 8109961452125243670
+      spriteID: e69c739be2fa561c0800000000000000
+      internalID: -4511006836530886290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_2
+      name: NekoRogue_2
       rect:
         serializedVersion: 2
         x: 64
         y: 96
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3186a6e70383d500800000000000000
-      internalID: 419823260233269567
+      spriteID: a0700cc3e66521260800000000000000
+      internalID: 7066805796763338506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_3
+      name: NekoRogue_3
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9c04290d277edb0800000000000000
-      internalID: -4762711840788526683
+      spriteID: 0a6e9f19032c34020800000000000000
+      internalID: 2324915346516600480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_4
+      name: NekoRogue_4
       rect:
         serializedVersion: 2
         x: 32
         y: 64
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04a3210b927f80430800000000000000
-      internalID: 3749518448205642304
+      spriteID: eaa8beeaab13f58a0800000000000000
+      internalID: -6314273474681795922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_5
+      name: NekoRogue_5
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba2927992ad5fb80800000000000000
-      internalID: -8361537260978885967
+      spriteID: ae448af916a7dbf80800000000000000
+      internalID: -8089174795978521366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_6
+      name: NekoRogue_6
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 250f1aee4cbf53240800000000000000
-      internalID: 4770996203504660562
+      spriteID: 6cc84ea4e0ba5a6b0800000000000000
+      internalID: -5285630509775024954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_7
+      name: NekoRogue_7
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7a4a7da36aed8d60800000000000000
-      internalID: 7894223435683482238
+      spriteID: 5a80e7af2b3a9dce0800000000000000
+      internalID: -1379891821710276443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_8
+      name: NekoRogue_8
       rect:
         serializedVersion: 2
         x: 64
         y: 32
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75fd54e328a846850800000000000000
-      internalID: 6369368065003872087
+      spriteID: 289558502a53d6430800000000000000
+      internalID: 3777734632427313538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_9
+      name: NekoRogue_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 704d284a8e3fd1f10800000000000000
-      internalID: 2242216370018374663
+      spriteID: e7b36142668edb0e0800000000000000
+      internalID: -2252388713225634946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_10
+      name: NekoRogue_10
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82e4bd38daddf3cc0800000000000000
-      internalID: -3729018229128212952
+      spriteID: b8281c3bfa32e4030800000000000000
+      internalID: 3480758799546024587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin008_11
+      name: NekoRogue_11
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5cccf28398e31f0800000000000000
-      internalID: -1063261587599735307
+      spriteID: 770e19aa1a58435f0800000000000000
+      internalID: -777849906230337417
       vertices: []
       indices: 
       edges: []
