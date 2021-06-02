@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 821dfa6deb573c4449ed6a23dc784bb4
+guid: b0de037401ec8f042a50144869fa52d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8104880240074564578
-    second: pipo-nekonin014_0
+      213: 1804378970753627593
+    second: NekoWarrior_0
   - first:
-      213: 1777424328077320975
-    second: pipo-nekonin014_1
+      213: -2729471428158855901
+    second: NekoWarrior_1
   - first:
-      213: -159330212827799892
-    second: pipo-nekonin014_2
+      213: -265705292097590968
+    second: NekoWarrior_2
   - first:
-      213: -6582710190778444259
-    second: pipo-nekonin014_3
+      213: 857755539846093837
+    second: NekoWarrior_3
   - first:
-      213: -8728496890976498137
-    second: pipo-nekonin014_4
+      213: -8251141590706393208
+    second: NekoWarrior_4
   - first:
-      213: -3626472766044198671
-    second: pipo-nekonin014_5
+      213: -6164265788740967667
+    second: NekoWarrior_5
   - first:
-      213: 4697793695683133279
-    second: pipo-nekonin014_6
+      213: 1193605379694650799
+    second: NekoWarrior_6
   - first:
-      213: 36466747335526882
-    second: pipo-nekonin014_7
+      213: 4623577961060452596
+    second: NekoWarrior_7
   - first:
-      213: 1637572686037360534
-    second: pipo-nekonin014_8
+      213: -3388258192368897411
+    second: NekoWarrior_8
   - first:
-      213: 6716215819876246998
-    second: pipo-nekonin014_9
+      213: 3242727736451451026
+    second: NekoWarrior_9
   - first:
-      213: 5927445534857807548
-    second: pipo-nekonin014_10
+      213: -8455468523772855475
+    second: NekoWarrior_10
   - first:
-      213: 1013503499626545119
-    second: pipo-nekonin014_11
+      213: 5760418877496492762
+    second: NekoWarrior_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -68,7 +68,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -104,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +116,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,253 +127,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pipo-nekonin014_0
+      name: NekoWarrior_0
       rect:
         serializedVersion: 2
         x: 0
         y: 96
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e32ab803a15a7070800000000000000
-      internalID: 8104880240074564578
+      spriteID: 9c574f72d117a0910800000000000000
+      internalID: 1804378970753627593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_1
+      name: NekoWarrior_1
       rect:
         serializedVersion: 2
         x: 32
         y: 96
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f03af2a520eaaa810800000000000000
-      internalID: 1777424328077320975
+      spriteID: 325630c8238fe1ad0800000000000000
+      internalID: -2729471428158855901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_2
+      name: NekoWarrior_2
       rect:
         serializedVersion: 2
         x: 64
         y: 96
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae596ef302f9cdf0800000000000000
-      internalID: -159330212827799892
+      spriteID: 849e491d176005cf0800000000000000
+      internalID: -265705292097590968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_3
+      name: NekoWarrior_3
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d169e4b45f385a4a0800000000000000
-      internalID: -6582710190778444259
+      spriteID: d0c56a07e1c57eb00800000000000000
+      internalID: 857755539846093837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_4
+      name: NekoWarrior_4
       rect:
         serializedVersion: 2
         x: 32
         y: 64
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72e8e3eb2562ed680800000000000000
-      internalID: -8728496890976498137
+      spriteID: 88f6e7e807e0e7d80800000000000000
+      internalID: -8251141590706393208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_5
+      name: NekoWarrior_5
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f8ae40bb3e2cadc0800000000000000
-      internalID: -3626472766044198671
+      spriteID: d036001cce0247aa0800000000000000
+      internalID: -6164265788740967667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_6
+      name: NekoWarrior_6
       rect:
         serializedVersion: 2
         x: 0
         y: 32
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f334be97ae13140800000000000000
-      internalID: 4697793695683133279
+      spriteID: fa5e1b2d4c9809010800000000000000
+      internalID: 1193605379694650799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_7
+      name: NekoWarrior_7
       rect:
         serializedVersion: 2
         x: 32
         y: 32
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e94c01405e818000800000000000000
-      internalID: 36466747335526882
+      spriteID: 4f84558a8af3a2040800000000000000
+      internalID: 4623577961060452596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_8
+      name: NekoWarrior_8
       rect:
         serializedVersion: 2
         x: 64
         y: 32
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69f93258ea3d9b610800000000000000
-      internalID: 1637572686037360534
+      spriteID: d727b84302d7af0d0800000000000000
+      internalID: -3388258192368897411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_9
+      name: NekoWarrior_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d5259244bac43d50800000000000000
-      internalID: 6716215819876246998
+      spriteID: 298ce7212bb700d20800000000000000
+      internalID: 3242727736451451026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_10
+      name: NekoWarrior_10
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb6ccaa1f44824250800000000000000
-      internalID: 5927445534857807548
+      spriteID: d4bb5073d2428aa80800000000000000
+      internalID: -8455468523772855475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-nekonin014_11
+      name: NekoWarrior_11
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdffad92010b01e00800000000000000
-      internalID: 1013503499626545119
+      spriteID: ad202a6f27e11ff40800000000000000
+      internalID: 5760418877496492762
       vertices: []
       indices: 
       edges: []
