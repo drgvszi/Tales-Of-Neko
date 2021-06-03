@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Gucci T-shirt
   ItemType: 2
+  Description: Un tricou simplu, modest, putin uzat dar inca utilizabil
+  Price: 40
   Stats:
     Strength: 0
     Constitution: 2

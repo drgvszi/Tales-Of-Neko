@@ -79,6 +79,8 @@ public class BattleSystem: MonoBehaviour
 	    enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
 
 	    playerGameObject = Resources.Load<GameObject>( "Player\\Player");
+	    playerGameObject.GetComponent<SpriteRenderer>().sprite =
+		    Resources.Load<GameObject>("Player\\"+player.Class).GetComponent<SpriteRenderer>().sprite;
 	    enemyGameObject = Resources.Load<GameObject>( "Enemies\\"+enemy.Name);
 	    
 	    

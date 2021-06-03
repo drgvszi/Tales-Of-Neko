@@ -4267,13 +4267,6 @@ MonoBehaviour:
   BlastSpellPlayerAnimator: {fileID: 1336069188}
   TargetedSpellEnemyAnimator: {fileID: 45785196}
   BlastSpellEnemyAnimator: {fileID: 721856743}
-  spellsButtons:
-  - {fileID: 225393424}
-  - {fileID: 1854959122}
-  - {fileID: 981537463}
-  - {fileID: 995998393}
-  - {fileID: 940130977}
-  - {fileID: 2082144468}
   spellCombo: {fileID: 334550502}
   spellMnD: {fileID: 1255294176}
   hide: {fileID: 4275748249114979455}
@@ -4281,6 +4274,13 @@ MonoBehaviour:
   comboDone: {fileID: 1255856985}
   okButton: {fileID: 4275748248563334492}
   backButton: {fileID: 1672296991}
+  spellsButtons:
+  - {fileID: 225393424}
+  - {fileID: 1854959122}
+  - {fileID: 981537463}
+  - {fileID: 995998393}
+  - {fileID: 940130977}
+  - {fileID: 2082144468}
 --- !u!1 &1249018219
 GameObject:
   m_ObjectHideFlags: 0

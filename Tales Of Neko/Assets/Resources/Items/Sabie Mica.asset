@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sabie Mica
   ItemType: 0
-  Description: E o sabie mica
+  Description: E o sabie mica, poate prea mica, esti sigur ca o vrei?
+  Price: 50
   Stats:
     Strength: 10
     Constitution: 0

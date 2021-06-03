@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Crocs
   ItemType: 4
+  Description: "Magie \u0219i \u0218tiin\u021B\u0103 \xEEn p\u0103r\u021Bi egale!
+    Noul model Crocs, bucur\u0103-te de un comfort superior. Inspirat\u0103 de felul
+    \xEEn care stilul de via\u021B\u0103 este \xEEntr-o continu\u0103 schimbare.
+    Incorpor\xE2nd noua talp\u0103 de spum\u0103, materialul de ultima genera\u021Bie
+    care asigur\u0103 un comfort suprem, ace\u0219tia au fost creea\u021Bi astfel
+    \xEEnc\xE2t s\u0103 te fac\u0103 s\u0103 te sim\u021Bi senza\u021Bional cu fiecare
+    pas pe care \xEEl faci pe drumul vie\u021Bii tale."
+  Price: 10
   Stats:
     Strength: 0
     Constitution: 0

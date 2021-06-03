@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Wooden Sword
   ItemType: 0
+  Description: 
+  Price: 12
   Stats:
     Strength: 2
     Constitution: 0

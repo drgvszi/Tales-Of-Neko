@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -6556783404261010989, guid: 6a93537d9fa572f4bbeb43e56212f17e, type: 3}
+  m_Sprite: {fileID: 1193605379694650799, guid: b0de037401ec8f042a50144869fa52d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
   - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
   Level: 1
-  Class: 2
+  Class: 1
   Inventory:
     EquippedItems:
       Helmet: {fileID: 11400000, guid: a51b134c0bc9a944e8889d93158776fe, type: 2}

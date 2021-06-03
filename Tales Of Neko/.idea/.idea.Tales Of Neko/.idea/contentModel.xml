@@ -16,6 +16,7 @@
           <e p="Game Main Components" t="Include">
             <e p="BattleSystem.cs" t="Include" />
             <e p="ChangeScene.cs" t="Include" />
+            <e p="ClassManager.cs" t="Include" />
             <e p="DONTDESTROYSOUND.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="NpcScript.cs" t="Include" />

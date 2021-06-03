@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sabie Mare
   ItemType: 0
-  Description: E o sabie mare
+  Description: E o sabie mare, poate prea mare, esti sigur ca o vrei?
+  Price: 60
   Stats:
     Strength: 15
     Constitution: 0

@@ -16,6 +16,7 @@ public class Shop : MonoBehaviour
 
     public Text Name;
     public Text Description;
+    public Text Price;
     public GameObject StatusPanel;
     public Button Buy;
 
@@ -49,6 +50,7 @@ public class Shop : MonoBehaviour
     {
         Name.text = item.Name;
         Description.text=item.Description;
+        Price.text = "Price: " + item.Price;
         StatusPanel.SetActive(true);
         if (GameManager.Instance.player.Money >= item.Price)
         {
