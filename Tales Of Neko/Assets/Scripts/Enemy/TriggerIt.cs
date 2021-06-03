@@ -30,10 +30,8 @@ public class TriggerIt : MonoBehaviour
                    GameManager.Instance.enemyAttacked = i;
                }
            }
-        
-           Vector3 a= new Vector3(  other.transform.position.x-0.3f
-               ,other.transform.position.y-0.3f,
-               other.transform.position.z-0.3f);
+
+           Vector3 a = other.transform.position + (other.transform.position - transform.position) / 2;
 
            GameManager.Instance.PlayerPos = a;
            
