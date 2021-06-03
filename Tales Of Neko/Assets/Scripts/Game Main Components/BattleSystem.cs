@@ -443,6 +443,7 @@ public class BattleSystem: MonoBehaviour
 		    {
 			    player.Health = player.MaxHealth;
 			    player.Mana = player.MaxMana;
+			    player.Quests.Clear();
 			    SceneManager.LoadScene("Map");
 		    }
 		    else
