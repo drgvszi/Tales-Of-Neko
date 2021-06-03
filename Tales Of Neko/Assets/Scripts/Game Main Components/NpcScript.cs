@@ -48,6 +48,11 @@ public class NpcScript : MonoBehaviour
     public void Accept()
     {
         PlayerMovement.canMove = true;
+        foreach (var goal in Quests[0].QuestGoal.Goals)
+        {
+            goal.currentAmount = 0;
+        }
+
         GameManager.Instance.player.Quests.Add(Quests[0]);
         Quests.Remove(Quests[0]);
         GameManager.Instance.player.questUpdate = true;

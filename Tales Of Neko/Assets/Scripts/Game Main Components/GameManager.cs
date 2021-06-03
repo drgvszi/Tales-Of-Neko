@@ -42,17 +42,30 @@ public class GameManager : MonoBehaviour
             else
             {
                 _instance.player = Resources.Load<GameObject>("Player\\Player").GetComponent<Player>();
+                
+                _instance.player.Health = _instance.player.MaxHealth;
+                _instance.player.Mana = _instance.player.MaxMana;
+                _instance.player.Quests.Clear();
+                _instance.player.deaths = 0;
+                _instance.player.Experience = 0;
+                _instance.player.Level = 0;
+                _instance.player.levelStatsUp = 0;
+                
                 _instance.shop = new List<Item>(Resources.Load<GameObject>("Shop\\Shop").GetComponent<ShopItems>().Items);
                 player.Class = getClass();
-
                 GameObject[] enemiesGo = Resources.LoadAll<GameObject>("Enemies");
                 _instance.enemies=new List<Mob>(enemiesGo.Length);
                 QuestManager = new QuestManager();
             
                 for (int i = 0; i < enemiesGo.Length; i++)
                 {
-                    _instance.enemies.Add(enemiesGo[i].GetComponent<Mob>());
+                    Mob enemy = enemiesGo[i].GetComponent<Mob>();
+                    enemy.Health = enemy.MaxHealth;
+                    enemy.Mana = enemy.MaxMana;
+                    _instance.enemies.Add(enemy);
+                    
                 }
+                
             }
             DontDestroyOnLoad(_instance.gameObject);
             DontDestroyOnLoad (_instance);
