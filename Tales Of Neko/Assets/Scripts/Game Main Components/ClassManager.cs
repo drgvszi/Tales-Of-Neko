@@ -1,16 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using Tales_of_Neko;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class ClassManager : MonoBehaviour
 {
     public GameObject PlayerCamera;
-    public AnimatorController mageController;
-    public AnimatorController warriorController;
-    public AnimatorController rogueController;
-    public AnimatorController bastedController;
+    public RuntimeAnimatorController mageController;
+    public RuntimeAnimatorController warriorController;
+    public RuntimeAnimatorController rogueController;
+    public RuntimeAnimatorController bastedController;
 
     private bool first = true;
     // Start is called before the first frame update

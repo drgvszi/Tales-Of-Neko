@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Tales_of_Neko;
-using UnityEditor.Search;
-using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace SaveLoadSystem

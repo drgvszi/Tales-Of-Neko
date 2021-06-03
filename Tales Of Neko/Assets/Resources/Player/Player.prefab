@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -6556783404261010989, guid: 6a93537d9fa572f4bbeb43e56212f17e, type: 3}
+  m_Sprite: {fileID: 8973619679579535368, guid: 8083f87e4b6af3249af3a3c6bff8c46c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -146,6 +146,7 @@ MonoBehaviour:
   Experience: 0
   Money: 600
   levelStatsUp: 0
-  Quests: []
+  Quests:
+  - {fileID: 11400000, guid: 36c672eda96b8fd418158f35c1bef7f1, type: 2}
   questUpdate: 0
-  deaths: 1
+  deaths: 0

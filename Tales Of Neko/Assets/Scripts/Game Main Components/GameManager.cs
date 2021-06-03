@@ -4,7 +4,6 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using SaveLoadSystem;
 using Tales_of_Neko;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
