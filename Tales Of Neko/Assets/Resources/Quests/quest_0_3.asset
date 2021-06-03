@@ -30,6 +30,6 @@ MonoBehaviour:
   QuestGoal:
     Goals:
     - Type: 2
-      What: MiniBoss
+      What: Earth Turtle
       currentAmount: 0
       requiredAmount: 1
