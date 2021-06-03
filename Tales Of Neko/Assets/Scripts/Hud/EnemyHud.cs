@@ -16,7 +16,8 @@ public class EnemyHud:MonoBehaviour
     {
         
 
-        Enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
+        Enemy = GameManager.Instance.enemies
+            [GameManager.Instance.enemyAttacked[GameManager.Instance.enemyAttacked.Count-1]];
 
         nameTextBox.text = Enemy.Name;
         levelTextBox.text =  "  Lv. " + Enemy.Level;

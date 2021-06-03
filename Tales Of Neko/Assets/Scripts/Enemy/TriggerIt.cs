@@ -11,11 +11,16 @@ public class TriggerIt : MonoBehaviour
 
     private void Update()
     {
-        Mob LastAttackedEnemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
-        if (LastAttackedEnemy.Name == enemy.GetComponent<Mob>().Name && LastAttackedEnemy.Health <= 0)
+        for (int enemyAttacked = 0; enemyAttacked < GameManager.Instance.enemyAttacked.Count; enemyAttacked++)
         {
-            enemyGo.SetActive(false);
+            Mob LastAttackedEnemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked[enemyAttacked]];
+            if (LastAttackedEnemy.Name == enemy.GetComponent<Mob>().Name && LastAttackedEnemy.Health <= 0)
+            {
+                enemyGo.SetActive(false);
+            }
         }
+
+       
     }
 
     // Start is called before the first frame update
@@ -27,7 +32,7 @@ public class TriggerIt : MonoBehaviour
            {
                if (enemies[i].Name == enemy.GetComponent<Mob>().Name)
                {
-                   GameManager.Instance.enemyAttacked = i;
+                   GameManager.Instance.enemyAttacked.Add(i);
                }
            }
 

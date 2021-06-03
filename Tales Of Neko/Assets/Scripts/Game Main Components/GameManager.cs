@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public Player player;
     public List<Mob> enemies;
 
-    public int enemyAttacked;
+    public List<int> enemyAttacked;
     public QuestManager QuestManager;
     public List<Item> shop;
     public Vector3 PlayerPos;
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
                 GameManagerData data = GameManagerSave.Load(save);
                 _instance.player=_instance.gameObject.GetComponent<Player>();
                 _instance.enemies = new List<Mob>(_instance.gameObject.GetComponents<Mob>());
-                _instance.enemyAttacked = data.enemyAttacked;
+                _instance.enemyAttacked = new List<int>();
                 _instance.QuestManager = new QuestManager();
             }
             else
@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
                 _instance.player.deaths = 0;
                 _instance.player.Experience = 0;
                 _instance.player.Level = 0;
+                _instance.enemyAttacked = new List<int>();
                 _instance.player.levelStatsUp = 0;
                 
                 _instance.shop = new List<Item>(Resources.Load<GameObject>("Shop\\Shop").GetComponent<ShopItems>().Items);
@@ -128,7 +129,7 @@ public class GameManager : MonoBehaviour
 
         _instance.player=_instance.gameObject.GetComponent<Player>();
         _instance.enemies = new List<Mob>(_instance.gameObject.GetComponents<Mob>());
-        _instance.enemyAttacked = data.enemyAttacked;
+        _instance.enemyAttacked = new List<int>();
         _instance.QuestManager = new QuestManager();
 
     }

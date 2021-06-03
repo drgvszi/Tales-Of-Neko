@@ -78,7 +78,8 @@ public class BattleSystem: MonoBehaviour
 
 	    player = GameManager.Instance.player;
 	    Debug.Log(player);
-	    enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
+	    enemy = GameManager.Instance.enemies
+		    [GameManager.Instance.enemyAttacked[GameManager.Instance.enemyAttacked.Count-1]];
 
 	    playerGameObject = Resources.Load<GameObject>("Player\\Player");
 	    if (player.deaths >= 1)
@@ -445,7 +446,7 @@ public class BattleSystem: MonoBehaviour
 		    {
 			    player.Health = player.MaxHealth;
 			    player.Mana = player.MaxMana;
-			    player.Quests.Clear();
+			    GameManager.Instance.player.Quests.Clear();
 			    GameManager.Instance.outOFBattle = true;
 			    SceneManager.LoadScene("Map");
 		    }

@@ -22,7 +22,7 @@ namespace SaveLoadSystem
                 save.EnemiesSave.Add(EnemySave.Save(enemy));
             }
 
-            save.EnemyAttacked = gameManager.enemyAttacked;
+            save.EnemyAttacked = Int32.MaxValue;
             return save;
         }
 
