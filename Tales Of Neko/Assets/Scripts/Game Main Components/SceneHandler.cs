@@ -20,6 +20,13 @@ public class SceneHandler : MonoBehaviour
     {
         if (GameManager.Instance.player.deaths == 1&&first)
         {
+            GameManager.Instance.player.Quests.Clear();
+            
+            GameManager.Instance.player.Level = 1;
+            GameManager.Instance.player.Experience = 0;
+            GameManager.Instance.player.levelStatsUp = 0;
+            GameManager.Instance.toDelete = 0;
+
             desert.SetActive(false);
             anotherRealm.SetActive(true);
             first = false;

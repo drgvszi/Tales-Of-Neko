@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public List<Item> shop;
     public Vector3 PlayerPos;
     public bool outOFBattle=false;
+    public int toDelete = 0;
     public void Awake()
     {
         if (_instance == null) {
@@ -67,6 +68,7 @@ public class GameManager : MonoBehaviour
                     
                 }
                 
+                
             }
             DontDestroyOnLoad(_instance.gameObject);
             DontDestroyOnLoad (_instance);
@@ -98,7 +100,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-  
+    
 
 
     public CharacterClass getClass()

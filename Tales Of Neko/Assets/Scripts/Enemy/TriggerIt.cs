@@ -31,7 +31,10 @@ public class TriggerIt : MonoBehaviour
                }
            }
 
-           Vector3 a = other.transform.position + (other.transform.position - transform.position) / 2;
+           
+           float x  = other.transform.position.x + (other.transform.position.x - transform.position.x) / 2;
+           float y  = other.transform.position.y + (other.transform.position.y - transform.position.y) / 2;
+           Vector3 a = new Vector3(x, y, other.transform.position.z);
 
            GameManager.Instance.PlayerPos = a;
            

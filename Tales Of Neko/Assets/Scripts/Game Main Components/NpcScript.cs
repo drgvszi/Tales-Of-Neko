@@ -26,6 +26,12 @@ public class NpcScript : MonoBehaviour
         keyCodes.Add(KeyCode.KeypadEnter);
         keyCodes.Add(KeyCode.A);
         keyCodes.Add(KeyCode.Space);
+
+        for (int index = 0; index < GameManager.Instance.toDelete; index++)
+        {
+            Quests.Remove(Quests[index]);
+        }
+
         
     }
 
@@ -55,6 +61,7 @@ public class NpcScript : MonoBehaviour
 
         GameManager.Instance.player.Quests.Add(Quests[0]);
         Quests.Remove(Quests[0]);
+        GameManager.Instance.toDelete += 1;
         GameManager.Instance.player.questUpdate = true;
 
         DialogueMenu.SetActive(false);
