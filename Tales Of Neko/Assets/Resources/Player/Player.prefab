@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8973619679579535368, guid: 8083f87e4b6af3249af3a3c6bff8c46c, type: 3}
+  m_Sprite: {fileID: 4623577961060452596, guid: b0de037401ec8f042a50144869fa52d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,8 +103,8 @@ MonoBehaviour:
     Dexterity: 5
     Intelligence: 5
     Wisdom: 5
-  Health: 100
-  Mana: 100
+  Health: 97.822
+  Mana: 0
   MaxHealth: 100
   MaxMana: 100
   Spells:
@@ -124,8 +124,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 631e64d21630fe54e8434cb6ac3ad5b6, type: 2}
   - {fileID: 11400000, guid: 17da3c9dbe188a74fafa12e0ae626ff2, type: 2}
   - {fileID: 11400000, guid: 65cecc51e681c584c91f2270c8fd687c, type: 2}
-  Level: 0
-  Class: 2
+  Level: 1
+  Class: 0
   Inventory:
     EquippedItems:
       Helmet: {fileID: 11400000, guid: a51b134c0bc9a944e8889d93158776fe, type: 2}
@@ -146,7 +146,6 @@ MonoBehaviour:
   Experience: 0
   Money: 600
   levelStatsUp: 0
-  Quests:
-  - {fileID: 11400000, guid: 36c672eda96b8fd418158f35c1bef7f1, type: 2}
+  Quests: []
   questUpdate: 0
-  deaths: 0
+  deaths: 1
