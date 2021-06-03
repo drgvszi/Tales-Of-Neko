@@ -71,16 +71,28 @@ public class BattleSystem: MonoBehaviour
 	    new WaitForSeconds(1f);
 	    SceneManager.LoadScene("Map");
     }
+
     IEnumerator SetupBattle()
     {
-	    
+
 	    player = GameManager.Instance.player;
 	    Debug.Log(player);
 	    enemy = GameManager.Instance.enemies[GameManager.Instance.enemyAttacked];
 
-	    playerGameObject = Resources.Load<GameObject>( "Player\\Player");
-	    playerGameObject.GetComponent<SpriteRenderer>().sprite =
-		    Resources.Load<GameObject>("Player\\"+player.Class).GetComponent<SpriteRenderer>().sprite;
+	    playerGameObject = Resources.Load<GameObject>("Player\\Player");
+	    if (player.deaths >= 1)
+	    {
+
+		    playerGameObject.GetComponent<SpriteRenderer>().sprite =
+		    Resources.Load<GameObject>("Player\\" + player.Class).GetComponent<SpriteRenderer>().sprite;
+		}
+	    else
+	    {
+		    playerGameObject.GetComponent<SpriteRenderer>().sprite =
+			    Resources.Load<GameObject>("Player\\Basted").GetComponent<SpriteRenderer>().sprite;
+	    }
+
+
 	    enemyGameObject = Resources.Load<GameObject>( "Enemies\\"+enemy.Name);
 	    
 	    
@@ -426,7 +438,15 @@ public class BattleSystem: MonoBehaviour
 	    }
 	    else
 	    {
-		    GameOverGO.SetActive(true);
+		    player.deaths++;
+		    if (player.deaths == 1)
+		    {
+			    player.Health = player.MaxHealth;
+			    player.Mana = player.MaxMana;
+			    SceneManager.LoadScene("Map");
+		    }
+		    else
+			    GameOverGO.SetActive(true);
 	    }
 	    
 

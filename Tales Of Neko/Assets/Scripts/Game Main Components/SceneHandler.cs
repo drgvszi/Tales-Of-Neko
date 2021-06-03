@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,11 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class SceneHandler : MonoBehaviour
 {
+    private static SceneHandler _instance;
+
+    public GameObject desert;
+    public GameObject anotherRealm;
+    private bool first = true;
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
     }
- 
+    
+
+    private void Update()
+    {
+        if (GameManager.Instance.player.deaths == 1&&first)
+        {
+            desert.SetActive(false);
+            anotherRealm.SetActive(true);
+            first = false;
+
+        }
+    }
+
     public void SaveScene()
     {
         int activeScene = SceneManager.GetActiveScene().buildIndex;

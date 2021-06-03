@@ -19,7 +19,10 @@ public class Player:Character
 
     public List<Quest> Quests;
     public QuestManager QuestManager;
-    
+
+    public bool questUpdate;
+
+    public int deaths = 0;
     public Player(string name) : base(name)
     {
         Experience = 0;

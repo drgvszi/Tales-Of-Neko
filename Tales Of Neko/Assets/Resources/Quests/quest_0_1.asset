@@ -41,7 +41,7 @@ MonoBehaviour:
   - Who: Basted
     What: I will not fail my people...
   MoneyReward: 50
-  ExperienceReward: 0
+  ExperienceReward: 50
   QuestGoal:
     Goals:
     - Type: 0

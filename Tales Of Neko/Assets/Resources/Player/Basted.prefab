@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4790568275257094810
+--- !u!1 &4293054834397654714
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,66 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9170165024512159972}
-  - component: {fileID: 6428057766348543991}
-  - component: {fileID: -8343618385977506624}
+  - component: {fileID: 5941597436007856513}
+  - component: {fileID: 1261141606972791871}
   m_Layer: 0
-  m_Name: Aquis
+  m_Name: Basted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9170165024512159972
+--- !u!4 &5941597436007856513
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4790568275257094810}
+  m_GameObject: {fileID: 4293054834397654714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6428057766348543991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4790568275257094810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a43c238f3c00a4aae354f37cc87d9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Aquis
-  Stats:
-    Strength: 5
-    Constitution: 5
-    Dexterity: 1
-    Intelligence: 1
-    Wisdom: 1
-  Health: 100
-  Mana: 50
-  MaxHealth: 200
-  MaxMana: 50
-  Spells:
-  - {fileID: 11400000, guid: 2f3a781f46bdcc0499f56199300f10a3, type: 2}
-  - {fileID: 11400000, guid: b52bf343f369b5243adeb0067ab83342, type: 2}
-  - {fileID: 11400000, guid: 8c95919d9f241144e86f71040a8220f4, type: 2}
-  Level: 1
-  difficulty: 4
---- !u!212 &-8343618385977506624
+--- !u!212 &1261141606972791871
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4790568275257094810}
+  m_GameObject: {fileID: 4293054834397654714}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -101,13 +71,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ecb0727a761e8214ea052fbb00d3d5fa, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8973619679579535368, guid: 8083f87e4b6af3249af3a3c6bff8c46c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.41, y: 5.43}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

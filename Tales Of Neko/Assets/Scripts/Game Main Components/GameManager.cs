@@ -44,8 +44,7 @@ public class GameManager : MonoBehaviour
                 _instance.player = Resources.Load<GameObject>("Player\\Player").GetComponent<Player>();
                 _instance.shop = new List<Item>(Resources.Load<GameObject>("Shop\\Shop").GetComponent<ShopItems>().Items);
                 player.Class = getClass();
-            
-                
+
                 GameObject[] enemiesGo = Resources.LoadAll<GameObject>("Enemies");
                 _instance.enemies=new List<Mob>(enemiesGo.Length);
                 QuestManager = new QuestManager();

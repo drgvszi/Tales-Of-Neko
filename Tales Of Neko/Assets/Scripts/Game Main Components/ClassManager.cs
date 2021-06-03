@@ -10,19 +10,28 @@ public class ClassManager : MonoBehaviour
     public AnimatorController mageController;
     public AnimatorController warriorController;
     public AnimatorController rogueController;
+    public AnimatorController bastedController;
+
+    private bool first = true;
     // Start is called before the first frame update
     void Start()
     {
-        setAnimator(GameManager.Instance.player.Class);
-        
+        PlayerCamera.GetComponent<Animator>().runtimeAnimatorController = bastedController;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.player.deaths == 1&&first)
+        {
+            setAnimator(GameManager.Instance.player.Class);
+            first = false;
+        }
         
     }
-    private void setAnimator(CharacterClass playerClass)
+
+    public void setAnimator(CharacterClass playerClass)
     {
         Debug.Log("AAA");
         if (playerClass == CharacterClass.Mage)

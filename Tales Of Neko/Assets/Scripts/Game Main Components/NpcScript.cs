@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class NpcScript : MonoBehaviour
 {
-    public Quest Quest;
+    public List<Quest> Quests;
     
     public GameObject DialogueMenu;
     public Button AcceptButton;
@@ -48,7 +48,9 @@ public class NpcScript : MonoBehaviour
     public void Accept()
     {
         PlayerMovement.canMove = true;
-        GameManager.Instance.player.Quests.Add(Quest);
+        GameManager.Instance.player.Quests.Add(Quests[0]);
+        Quests.Remove(Quests[0]);
+        GameManager.Instance.player.questUpdate = true;
 
         DialogueMenu.SetActive(false);
     }
@@ -63,7 +65,7 @@ public class NpcScript : MonoBehaviour
     {
         PlayerMovement.canMove = false;
         EnterChat.text = "Space to continue...";
-        foreach (Dialogue dialogue in Quest.Story)
+        foreach (Dialogue dialogue in Quests[0].Story)
         {
             DialogueChat.text = dialogue.Who + " : " + dialogue.What;
             

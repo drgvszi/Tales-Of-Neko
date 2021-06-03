@@ -29,15 +29,15 @@ MonoBehaviour:
     What: I really don't know, sir! But they're so strong.
   - Who: Basted
     What: They will pay for this mistake. All of them!
-  MoneyReward: 0
+  MoneyReward: 200
   ExperienceReward: 0
   QuestGoal:
     Goals:
     - Type: 0
-      What: Enemy 1
+      What: MiniBoss
       currentAmount: 0
       requiredAmount: 1
     - Type: 0
-      What: Enemy 2
+      What: Aquis
       currentAmount: 0
       requiredAmount: 1

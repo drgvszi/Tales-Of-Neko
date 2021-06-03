@@ -33,7 +33,7 @@ MonoBehaviour:
     What: 'But, sir.. We don''t have any chance if we confront him.. '
   - Who: Basted
     What: 'I''ll fight with it! Go and help others! '
-  MoneyReward: 0
+  MoneyReward: 500
   ExperienceReward: 0
   QuestGoal:
     Goals:

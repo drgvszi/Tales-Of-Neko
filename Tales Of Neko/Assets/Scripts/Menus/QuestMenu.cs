@@ -14,34 +14,39 @@ public class QuestMenu : MonoBehaviour
 
      public Text QuestText;
      public GameObject StatusPanel;
+
      void Start()
      {
-         foreach (Transform  child in Content.transform)
+       
+         foreach (Transform child in Content.transform)
          {
              Destroy(child.gameObject);
- 
+
          }
 
 
          List<Quest> quests = GameManager.Instance.player.Quests;
- 
+
          ScrollView.verticalNormalizedPosition = 1;
          for (int i = 0; i < quests.Count; i++)
          {
              GameObject spawnedItem = Instantiate(ItemPrefab);
              Button button = spawnedItem.GetComponent<Button>();
              int index = i;
-             if(button != null) {
-                 button.onClick.AddListener(() =>QuestListClick(quests[index]));
+             if (button != null)
+             {
+                 button.onClick.AddListener(() => QuestListClick(quests[index]));
              }
-             spawnedItem.transform.SetParent(Content.transform,false);
- 
+
+             spawnedItem.transform.SetParent(Content.transform, false);
+
              ItemDetails<Quest> itemDetails = spawnedItem.GetComponentInChildren<ItemDetails<Quest>>();
              itemDetails.Text.text = quests[i].Name;
              itemDetails.Class = quests[i];
          }
      }
- 
+     
+
      private void QuestListClick(Quest quest)
      {
          bool allDone = true;
@@ -84,6 +89,11 @@ public class QuestMenu : MonoBehaviour
      // Update is called once per frame
      void Update()
      {
-         
+         if (GameManager.Instance.player.questUpdate)
+         {
+             Start();
+             GameManager.Instance.player.questUpdate = false;
+         }
+
      }
 }
