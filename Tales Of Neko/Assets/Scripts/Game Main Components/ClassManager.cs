@@ -33,7 +33,6 @@ public class ClassManager : MonoBehaviour
 
     public void setAnimator(CharacterClass playerClass)
     {
-        Debug.Log("AAA");
         if (playerClass == CharacterClass.Mage)
         {
             PlayerCamera.GetComponent<Animator>().runtimeAnimatorController = mageController;

@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     public int enemyAttacked;
     public QuestManager QuestManager;
     public List<Item> shop;
-
-
+    public Vector3 PlayerPos;
+    public bool outOFBattle=false;
     public void Awake()
     {
         if (_instance == null) {
@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                _instance.PlayerPos = new Vector3(0,0,0);
                 _instance.player = Resources.Load<GameObject>("Player\\Player").GetComponent<Player>();
                 
                 _instance.player.Health = _instance.player.MaxHealth;
@@ -96,6 +97,9 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+
+  
+
 
     public CharacterClass getClass()
     {

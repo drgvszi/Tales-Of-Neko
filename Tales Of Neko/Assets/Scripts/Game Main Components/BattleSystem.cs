@@ -63,13 +63,14 @@ public class BattleSystem: MonoBehaviour
 	    if (player.CanEscape(enemy))
 	    {
 		    gameChat.text = "You escaped!";
+		    new WaitForSeconds(1f);
+		    GameManager.Instance.outOFBattle = true;
+		    SceneManager.LoadScene("Map");
 	    }
 	    else
 	    {
 		    gameChat.text = "Can't escape!";
 	    }
-	    new WaitForSeconds(1f);
-	    SceneManager.LoadScene("Map");
     }
 
     IEnumerator SetupBattle()
@@ -434,6 +435,7 @@ public class BattleSystem: MonoBehaviour
 		    StartCoroutine(UpdatePlayerHud());
 		    
 		    yield return new WaitForSeconds(1f);
+		    GameManager.Instance.outOFBattle = true;
 		    SceneManager.LoadScene("Map");
 	    }
 	    else
@@ -444,6 +446,7 @@ public class BattleSystem: MonoBehaviour
 			    player.Health = player.MaxHealth;
 			    player.Mana = player.MaxMana;
 			    player.Quests.Clear();
+			    GameManager.Instance.outOFBattle = true;
 			    SceneManager.LoadScene("Map");
 		    }
 		    else

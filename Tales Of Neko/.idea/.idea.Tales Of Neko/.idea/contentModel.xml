@@ -58,6 +58,7 @@
             <e p="Player.cs" t="Include" />
             <e p="PlayerMov.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerPosition.cs" t="Include" />
             <e p="SelectClass.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
           </e>
